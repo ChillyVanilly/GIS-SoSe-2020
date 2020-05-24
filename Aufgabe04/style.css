@@ -123,7 +123,7 @@
 
 @media (min-width: 1024px) {
     .shop {
-        grid-template-columns: auto auto auto;
+        grid-template-columns:  auto auto auto;
     }
     .warenkorb {
         grid-template-columns: auto auto auto;
