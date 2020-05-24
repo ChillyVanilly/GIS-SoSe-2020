@@ -1,4 +1,4 @@
-/* Smartphone Darstellung */
+/*Smartphone*/
 
 @media (max-width: 599px) {
     .shop {
@@ -35,30 +35,28 @@
         height: 100px;
         margin-top: -25px;
     }
-   
-    /*Navigationsleiste*/
-    nav {
-        position: sticky;
-        top: 0;
-        margin-top: -15px;
-        background-color: black;
-        color: white;
-        font-family: sans-serif;
-        font-size: larger;
-        width: 310px;
-        height: 50px;
-        left: 60%;
-        padding-left: 10px;
-        border-radius: 0 0 10px 10px;
-    }
-    nav a {
-        text-decoration: none;
-        color: white;
-        font-family: sans-serif;
-    }
-}
-
-/*Tablet Darstellung*/
+    /*Navigation*/
+        nav {
+            position: sticky;
+            top: 0;
+            margin-top: -15px;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            font-size: larger;
+            width: 310px;
+            height: 50px;
+            left: 50%;
+            padding-left: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+     }
+ }
+ /*Tablet*/
 
 @media (min-width: 600px) {
     .shop {
@@ -96,7 +94,7 @@
         margin-top: auto;
     }
   
-    /*Navigationsleiste*/
+    /*Navigation*/
     nav {
         position: sticky;
         top: 0;
@@ -117,12 +115,11 @@
         font-family: sans-serif;
     }
     nav a:hover {
-        color: violet;
+        color: red;
         font-weight: bolder;
     }
 }
-
-/*Desktop/Laptop Darstellung*/
+/*Desktop*/
 
 @media (min-width: 1024px) {
     .shop {
@@ -132,10 +129,10 @@
         grid-template-columns: auto auto auto;
     }
     .ueberschrift {
-        height: 900px;
+        height: 200px;
         width: 900px;
-        border-radius: 50%;
-        margin: -500px auto auto auto;
+        border-radius: 1%;
+        margin: -50px auto auto auto;
     }
     .ueberschrift h1 {
         padding-top: 45%;
@@ -149,12 +146,12 @@
     .ueberschrift img {
         margin-left: auto;
         margin-right: auto;
-        width: 100x;
-        height: 100px;
-        margin-top: auto;
+        width: 200x;
+        height: 200px;
+        margin-top: -100px;
     }
   
-    /*Navigationsleiste*/
+    /*Navigation*/
     nav {
         position: sticky;
         top: 0;
@@ -163,9 +160,9 @@
         color: white;
         font-family: sans-serif;
         font-size: larger;
-        width: 310px;
+        width: 500px;
         height: 50px;
-        left: 60%;
+        left: 50%;
         padding-left: 10px;
         border-radius: 0 0 10px 10px;
     }
@@ -175,58 +172,53 @@
         font-family: sans-serif;
     }
     nav a:hover {
-        color: violet;
+        color: red;
         font-weight: bolder;
     }
 }
-
-/*Hintergrund*/
+/*Background*/
 
 body {
-    background-image: url("bg.png");
+    background-image: url("King.jpg");
     font-family: sans-serif;
 }
-
-/*Kreis*/
+/*Navileiste*/
 
 .ueberschrift {
-    background-color: rgb(240, 151, 210);
+    background-color: rgb(138, 23, 38);
+    width: 1000px;
+    height: 500px;
     font-family: sans-serif;
-    color: whitesmoke;
+    color: white;
     text-align: center;
 }
+/*Store*/
 
-
-/*Shop*/
-
-.shop {
+.store {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 50px;
     margin: auto;
 }
-
-.shop>div {
+.store>div {
     border: 2px;
     border-style: solid;
     text-align: center;
     padding: 20px 0;
-    font-size: 14px;
+    font-size: 20px;
     background-color: white;
 }
-
-.shop>div>img {
-    border: 2px;
+.store>div>img {
+    border: 4px;
     border-style: none;
     max-width: 250px;
     max-height: 200px;
 }
 
-.shop>div>button {
+.store>div>button {
     background-color: white;
     color: black;
     font-family: sans-serif;
 }
-
 /*Warenkorb*/
 .warenkorb {
     display: grid;
@@ -248,5 +240,3 @@ body {
     color: black;
     font-family: sans-serif;
 }
-
-
