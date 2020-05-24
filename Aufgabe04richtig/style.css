@@ -182,12 +182,12 @@ body {
     background-image: url("King.jpg");
     font-family: sans-serif;
 }
-/*Kreis*/
+/*Navileiste*/
 
 .ueberschrift {
-    background-color: rgb(240, 151, 210);
+    background-color: rgb(138, 23, 38);
     font-family: sans-serif;
-    color: whitesmoke;
+    color: black;
     text-align: center;
 }
 /*Store*/
