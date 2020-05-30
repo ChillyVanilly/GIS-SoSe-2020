@@ -1,0 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    text-align: center;
+    background-image: url(/Aufgabe05/Bg.jpg);
+    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
