@@ -156,7 +156,7 @@ body {
         border-color: rgba(255, 251, 0, 0.603);
         background-color: rgba(1, 0, 82, 0.603);
         border-style: groove;
-        width: 925px;
+        width: 950px;
         height: 80px;
         padding: 10px 10px 10px 10px; 
         text-align: center;
@@ -170,7 +170,6 @@ body {
     display: grid;
     grid-gap: 30px 30px;
     justify-content: center;
-    grid-template-columns: repeat(4, 210px);
     width: 100%;
 }
 
@@ -186,7 +185,6 @@ body {
     background-color: rgba(187, 187, 187, 0.9);
     width: 210px;
     height: 100%;
-    padding: 10px 10px 10px 10px; 
     text-align: center;
     margin-bottom: 10px;
     border-radius: 20px;
