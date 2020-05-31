@@ -173,7 +173,7 @@ body {
     display: flex;
     justify-content: center;
     grid-gap: 30px 30px;
-    grid-template-columns: repeat(2, 210px);
+    grid-template-columns: repeat(4, 210px);
 }
 
 .container img{
