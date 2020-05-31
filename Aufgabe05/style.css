@@ -3,7 +3,7 @@ html{
 }
 body {
     text-align: center;
-    background-image: url();
+    background-image: url(/Aufgabe05/Background.jpg);
     filter: blur();
     font-family: Arial, Helvetica, sans-serif;
     margin:0px;
@@ -94,6 +94,8 @@ body {
         background-color: rgba(255, 255, 255, 0.9);
         border-color: royalblue;
         border-style: groove;
+        font: caption;
+        font-family: cursive;
         width: 400px;
         height: 80px;
         padding: 20px 20px 20px 20px; 
