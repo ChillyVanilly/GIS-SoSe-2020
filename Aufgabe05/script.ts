@@ -393,7 +393,7 @@ for (let i: number = 0; i < array.length; i++) {
         bildStreifen.src = array[i].bild;
         document.getElementById("produktstripe" + i)?.appendChild(bildStreifen);
        
-        let nameStreifen: HTMLElement = document.createElement("h3");
+        let nameStreifen: HTMLElement = document.createElement("h1");
         nameStreifen.innerHTML = array[i].name;
         document.getElementById("produkstripe" + i)?.appendChild(nameStreifen);
  
@@ -425,7 +425,7 @@ for (let i: number = 0; i < array.length; i++) {
         programmierStreifen.innerHTML = array[i].programmierbar;
         document.getElementById("produktstripe" + i)?.appendChild(programmierStreifen);
    
-        let preisStreifen: HTMLElement = document.createElement("h4");
+        let preisStreifen: HTMLElement = document.createElement("h1");
         preisStreifen.innerHTML = array[i].preis;
         document.getElementById("produktstripe" + i)?.appendChild(preisStreifen);
            
