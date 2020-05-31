@@ -259,9 +259,9 @@ let dowhat = {
 };
 //LED-Stripes
 let govee1 = {
-    name: "Govee Dreamcolor LED Strip Lichtband, 5M LED Streifen WiFi Drahtlos Handy Streuerbare 5050 LED Band Sync mit Musik, kompatibel mit Alexa, Google Assistant Android iOS (Nicht unterstützt 5G WiFi) [Energieklasse A+]",
+    name: "Govee Dreamcolor LED Strip Lichtband, 5M LED Streifen WiFi",
     bild: "Items/Govee1.jpg",
-    beschreibung: "[Kompatibel mit ALEXA & Govee APP]: Govee LED Streifen",
+    beschreibung: "[Kompatibel mit ALEXA & Govee APP]",
     farbe: "Dreamcolor",
     länge: "5M",
     wasserdicht: "Wasserdicht",
@@ -276,9 +276,9 @@ let govee1 = {
     stripe: true
 };
 let govee2 = {
-    name: "Govee Alexa LED Strip Lichtband, 5M RGB Smart WiFi LED Streifen,APP Steuerbar Musik LED Band Lichterkette für Haus, Küche, TV, Party,kompatibel mit Alexa, Google Assistant (Nicht unterstützt 5G WiFi) [Energieklasse A+]",
+    name: "Govee Alexa LED Strip Lichtband, 5M RGB Smart WiFi LED Streifen",
     bild: "Items/Govee2.jpg",
-    beschreibung: "[Sprachsteuerung über Alexa & Google Assistant] Govee LED streifen strip",
+    beschreibung: "[Sprachsteuerung über Alexa & Google Assistant]",
     farbe: "RGB",
     länge: "5M",
     wasserdicht: "Nicht Wasserdicht",
@@ -293,9 +293,9 @@ let govee2 = {
     stripe: true
 };
 let govee3 = {
-    name: "Govee 2 x 5m RGB LED Streifen Lichtband mit 3 in 1 App, Fernbedienung und Steuerbox, Selbstklebend LED Strip Beleuchtung Full Kit mit DIY-Timer-Einstellung für Zuhause, Schlafzimmer, TV, Schrankdeko [Energieklasse A+]",
+    name: "Govee 2 x 5m RGB LED Streifen Lichtband mit 3 in 1 App",
     bild: "Items/Govee3.jpg",
-    beschreibung: "Holen Sie sich das ganze Haus Vibrant: Govee 2 x 5m LED streifen sind mit mehr als 16 Millionen Farben erhältlich",
+    beschreibung: "Govee 2 x 5m LED streifen",
     farbe: "RGB",
     länge: "2x 5M",
     wasserdicht: "Wasserdicht",
@@ -309,24 +309,7 @@ let govee3 = {
     schild: false,
     stripe: true
 };
-let ws2812b1 = {
-    name: "Longruner WS2812B LED Strip Panel Kit Matrix 8x32 256 Pixel Digitales Flexibles Integriertes WS2812B IC LED Licht mit Voller Traumfarbenbeleuchtung DC5V LWS03 (WS03)",
-    bild: "ws2812b.jpg",
-    beschreibung: "Sonderfunktion: Jede LED kann individuell adressiert werden. Sie können jede LED so einstellen, dass Nachrichten gescrollt oder kleine Bilder gezeichnet werden.",
-    farbe: "Dreamcolor",
-    länge: "8x32 256 Pixel",
-    wasserdicht: "Nicht Wasserdicht",
-    wifi: "Wifi - Nicht Compatibel",
-    smarthome: "Smarthome - Nicht Compatibel",
-    preis: "32,99€",
-    auflager: true,
-    programmierbar: "Programmierbar",
-    figur: false,
-    text: false,
-    schild: false,
-    stripe: true
-};
-let array = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
+let array = [govee1, govee2, govee3, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
 for (let i = 0; i < array.length; i++) {
     if (array[i].stripe) {
         let div = document.createElement("div");
