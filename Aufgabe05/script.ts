@@ -311,7 +311,7 @@ let dowhat: Produkte = {
 let govee1: Produkte = {
 
     name: "Govee Dreamcolor LED Strip Lichtband, 5M LED Streifen WiFi Drahtlos Handy Streuerbare 5050 LED Band Sync mit Musik, kompatibel mit Alexa, Google Assistant Android iOS (Nicht unterstützt 5G WiFi) [Energieklasse A+]",
-    bild: "Govee1.jpg",
+    bild: "Items/Govee1.jpg",
     beschreibung: "[Kompatibel mit ALEXA & Govee APP]: Govee LED Streifen",
     farbe: "Dreamcolor",
     länge: "5M",
@@ -330,7 +330,7 @@ let govee1: Produkte = {
 
 let govee2: Produkte = {
     name: "Govee Alexa LED Strip Lichtband, 5M RGB Smart WiFi LED Streifen,APP Steuerbar Musik LED Band Lichterkette für Haus, Küche, TV, Party,kompatibel mit Alexa, Google Assistant (Nicht unterstützt 5G WiFi) [Energieklasse A+]",
-    bild: "Govee2.jpg",
+    bild: "Items/Govee2.jpg",
     beschreibung: "[Sprachsteuerung über Alexa & Google Assistant] Govee LED streifen strip",
     farbe: "RGB",
     länge: "5M",
@@ -348,7 +348,7 @@ let govee2: Produkte = {
 
 let govee3: Produkte = {
     name: "Govee 2 x 5m RGB LED Streifen Lichtband mit 3 in 1 App, Fernbedienung und Steuerbox, Selbstklebend LED Strip Beleuchtung Full Kit mit DIY-Timer-Einstellung für Zuhause, Schlafzimmer, TV, Schrankdeko [Energieklasse A+]",
-    bild: "Govee3.jpg",
+    bild: "Items/Govee3.jpg",
     beschreibung: "Holen Sie sich das ganze Haus Vibrant: Govee 2 x 5m LED streifen sind mit mehr als 16 Millionen Farben erhältlich",
     farbe: "RGB",
     länge: "2x 5M",
@@ -382,17 +382,9 @@ let ws2812b1: Produkte = {
     stripe: true
 };
 
-let array: Array<Produkte> = [govee1, govee2, govee3];
-for (let i: number = 0; i < array.length; i++) {
-    if (array[i].stripe) {
-        let div: HTMLDivElement = document.createElement("div");
-        div.id = "stripe" + i;
-        document.getElementById("stripe")?.appendChild(div);
-    }
-}
 
 
-/*let array: Array<Produkte> = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
+let array: Array<Produkte> = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
 for (let i: number = 0; i < array.length; i++) {
     if (array[i].stripe) {
         let  div: HTMLDivElement = document.createElement("div");
@@ -444,6 +436,7 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktstripe" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
     }
+}
     /*else if (array[i].figur) {
         let  div: HTMLDivElement = document.createElement("div");
         div.id = "produktFigur" + i;
