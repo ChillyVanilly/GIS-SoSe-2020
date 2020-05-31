@@ -157,7 +157,7 @@ body {
         background-color: rgba(1, 0, 82, 0.603);
         border-style: groove;
         width: 950px;
-        height: 80px;
+        height: 100px;
         padding: 10px 10px 10px 10px; 
         text-align: center;
         margin-bottom: 10px;
@@ -171,6 +171,7 @@ body {
     grid-gap: 30px 30px;
     justify-content: center;
     width: 100%;
+    grid-template-columns: repeat(3, 210px);
 }
 
 .container img{
@@ -184,7 +185,7 @@ body {
     grid-template-columns:1fr;
     background-color: rgba(187, 187, 187, 0.9);
     width: 210px;
-    height: 430%;
+    height: 100%;
     text-align: center;
     margin-bottom: 10px;
     border-radius: 20px;
