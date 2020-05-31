@@ -410,7 +410,7 @@ for (let i: number = 0; i < array.length; i++) {
         programmierStreifen.innerHTML = array[i].programmierbar;
         document.getElementById("produktstripe" + i)?.appendChild(programmierStreifen);
    
-        let preisStreifen: HTMLElement = document.createElement("h1");
+        let preisStreifen: HTMLElement = document.createElement("h2");
         preisStreifen.innerHTML = array[i].preis;
         document.getElementById("produktstripe" + i)?.appendChild(preisStreifen);
            
@@ -419,39 +419,39 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktstripe" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
     }
-}
-    /*else if (array[i].figur) {
+
+    else if (array[i].figur) {
         let  div: HTMLDivElement = document.createElement("div");
-        div.id = "produktFigur" + i;
-        document.getElementById("Figur")?.appendChild(div);
+        div.id = "produktfigur" + i;
+        document.getElementById("figur")?.appendChild(div);
        
         let bildFigur: HTMLImageElement = document.createElement("img");
         bildFigur.src = array[i].bild;
-        document.getElementById("produktFigur" + i)?.appendChild(bildFigur);
+        document.getElementById("produktfigur" + i)?.appendChild(bildFigur);
        
-        let nameFigur: HTMLElement = document.createElement("h3");
+        let nameFigur: HTMLElement = document.createElement("h1");
         nameFigur.innerHTML = array[i].name;
-        document.getElementById("produkFigur" + i)?.appendChild(nameFigur);
+        document.getElementById("produkfigur" + i)?.appendChild(nameFigur);
  
         let beschreibungFigur: HTMLElement = document.createElement("p");
         beschreibungFigur.innerHTML = array[i].beschreibung;
-        document.getElementById("produktFigur" + i)?.appendChild(beschreibungFigur);
+        document.getElementById("produktfigur" + i)?.appendChild(beschreibungFigur);
 
         let farbeFigur: HTMLElement = document.createElement("p");
         farbeFigur.innerHTML = array[i].farbe;
-        document.getElementById("produktFigur" + i)?.appendChild(farbeFigur);
+        document.getElementById("produktfigur" + i)?.appendChild(farbeFigur);
 
         let wasserdichtFigur: HTMLElement = document.createElement("p");
         wasserdichtFigur.innerHTML = array[i].wasserdicht;
-        document.getElementById("produktFigur" + i)?.appendChild(wasserdichtFigur);
+        document.getElementById("produktfigur" + i)?.appendChild(wasserdichtFigur);
    
-        let preisFigur: HTMLElement = document.createElement("p");
+        let preisFigur: HTMLElement = document.createElement("h2");
         preisFigur.innerHTML = array[i].preis;
-        document.getElementById("produktFigur" + i)?.appendChild(preisFigur);
+        document.getElementById("produktfigur" + i)?.appendChild(preisFigur);
            
         let button: HTMLElement = document.createElement("button");
         document.getElementById(array[i].name)?.appendChild(button);
-        document.getElementById("produktFigur" + i)?.appendChild(button);
+        document.getElementById("produktfigur" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
     }
     else if (array[i].schild) {
@@ -464,7 +464,7 @@ for (let i: number = 0; i < array.length; i++) {
         bildSchild.src = array[i].bild;
         document.getElementById("produktSchild" + i)?.appendChild(bildSchild);
        
-        let nameSchild: HTMLElement = document.createElement("h3");
+        let nameSchild: HTMLElement = document.createElement("h1");
         nameSchild.innerHTML = array[i].name;
         document.getElementById("produkSchild" + i)?.appendChild(nameSchild);
  
@@ -480,7 +480,7 @@ for (let i: number = 0; i < array.length; i++) {
         wasserdichtSchild.innerHTML = array[i].wasserdicht;
         document.getElementById("produktSchild" + i)?.appendChild(wasserdichtSchild);
    
-        let preisSchild: HTMLElement = document.createElement("p");
+        let preisSchild: HTMLElement = document.createElement("h2");
         preisSchild.innerHTML = array[i].preis;
         document.getElementById("produktSchild" + i)?.appendChild(preisSchild);
            
@@ -499,7 +499,7 @@ for (let i: number = 0; i < array.length; i++) {
         bildText.src = array[i].bild;
         document.getElementById("produktText" + i)?.appendChild(bildText);
        
-        let nameText: HTMLElement = document.createElement("h3");
+        let nameText: HTMLElement = document.createElement("h1");
         nameText.innerHTML = array[i].name;
         document.getElementById("produkText" + i)?.appendChild(nameText);
  
@@ -515,7 +515,7 @@ for (let i: number = 0; i < array.length; i++) {
         wasserdichtText.innerHTML = array[i].wasserdicht;
         document.getElementById("produktText" + i)?.appendChild(wasserdichtText);
    
-        let preisText: HTMLElement = document.createElement("p");
+        let preisText: HTMLElement = document.createElement("h2");
         preisText.innerHTML = array[i].preis;
         document.getElementById("produktText" + i)?.appendChild(preisText);
            
@@ -524,6 +524,6 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktText" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
 
-    }*/
-
+    }
+}
 
