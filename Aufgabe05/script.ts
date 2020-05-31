@@ -382,7 +382,7 @@ let ws2812b1: Produkte = {
     stripe: true
 };
 
-let array: Array<Produkte> = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
+/*let array: Array<Produkte> = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
 for (let i: number = 0; i < array.length; i++) {
     if (array[i].stripe) {
         let  div: HTMLDivElement = document.createElement("div");
@@ -539,5 +539,5 @@ for (let i: number = 0; i < array.length; i++) {
         button.innerHTML = "In den Warenkorb";
 
     }*/
-}
+
 

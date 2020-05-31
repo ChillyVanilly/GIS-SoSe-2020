@@ -326,43 +326,54 @@ let ws2812b1 = {
     schild: false,
     stripe: true
 };
-let array = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
-for (let i = 0; i < array.length; i++) {
+/*let array: Array<Produkte> = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
+for (let i: number = 0; i < array.length; i++) {
     if (array[i].stripe) {
-        let div = document.createElement("div");
+        let  div: HTMLDivElement = document.createElement("div");
         div.id = "produktstripe" + i;
         document.getElementById("stripe")?.appendChild(div);
-        let bildStreifen = document.createElement("img");
+       
+        let bildStreifen: HTMLImageElement = document.createElement("img");
         bildStreifen.src = array[i].bild;
         document.getElementById("produktstripe" + i)?.appendChild(bildStreifen);
-        let nameStreifen = document.createElement("h1");
+       
+        let nameStreifen: HTMLElement = document.createElement("h1");
         nameStreifen.innerHTML = array[i].name;
         document.getElementById("produkstripe" + i)?.appendChild(nameStreifen);
-        let beschreibungStreifen = document.createElement("p");
+ 
+        let beschreibungStreifen: HTMLElement = document.createElement("p");
         beschreibungStreifen.innerHTML = array[i].beschreibung;
         document.getElementById("produktstripe" + i)?.appendChild(beschreibungStreifen);
-        let farbeStreifen = document.createElement("p");
+
+        let farbeStreifen: HTMLElement = document.createElement("p");
         farbeStreifen.innerHTML = array[i].farbe;
         document.getElementById("produktstripe" + i)?.appendChild(farbeStreifen);
-        let längeStreifen = document.createElement("p");
+
+        let längeStreifen: HTMLElement = document.createElement("p");
         längeStreifen.innerHTML = array[i].länge;
         document.getElementById("produktStripe" + i)?.appendChild(längeStreifen);
-        let wasserdichtStreifen = document.createElement("p");
+
+        let wasserdichtStreifen: HTMLElement = document.createElement("p");
         wasserdichtStreifen.innerHTML = array[i].wasserdicht;
         document.getElementById("produktstripe" + i)?.appendChild(wasserdichtStreifen);
-        let wifiStreifen = document.createElement("p");
+
+        let wifiStreifen: HTMLElement = document.createElement("p");
         wifiStreifen.innerHTML = array[i].wifi;
         document.getElementById("produktstripe" + i)?.appendChild(wifiStreifen);
-        let smarthomeStreifen = document.createElement("p");
+
+        let smarthomeStreifen: HTMLElement = document.createElement("p");
         smarthomeStreifen.innerHTML = array[i].smarthome;
         document.getElementById("produktstripe" + i)?.appendChild(smarthomeStreifen);
-        let programmierStreifen = document.createElement("p");
+
+        let programmierStreifen: HTMLElement = document.createElement("p");
         programmierStreifen.innerHTML = array[i].programmierbar;
         document.getElementById("produktstripe" + i)?.appendChild(programmierStreifen);
-        let preisStreifen = document.createElement("h1");
+   
+        let preisStreifen: HTMLElement = document.createElement("h1");
         preisStreifen.innerHTML = array[i].preis;
         document.getElementById("produktstripe" + i)?.appendChild(preisStreifen);
-        let button = document.createElement("button");
+           
+        let button: HTMLElement = document.createElement("button");
         document.getElementById(array[i].name)?.appendChild(button);
         document.getElementById("produktstripe" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
@@ -472,5 +483,4 @@ for (let i = 0; i < array.length; i++) {
         button.innerHTML = "In den Warenkorb";
 
     }*/
-}
 //# sourceMappingURL=script.js.map
