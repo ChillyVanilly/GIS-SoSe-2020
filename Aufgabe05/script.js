@@ -326,6 +326,14 @@ let ws2812b1 = {
     schild: false,
     stripe: true
 };
+let array = [govee1, govee2, govee3];
+for (let i = 0; i < array.length; i++) {
+    if (array[i].stripe) {
+        let div = document.createElement("div");
+        div.id = "stripe" + i;
+        document.getElementById("stripe")?.appendChild(div);
+    }
+}
 /*let array: Array<Produkte> = [govee1, govee2, govee3, ws2812b1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
 for (let i: number = 0; i < array.length; i++) {
     if (array[i].stripe) {
