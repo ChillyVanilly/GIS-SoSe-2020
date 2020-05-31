@@ -2,7 +2,8 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    background-image: url(/Aufgabe05/Background.gif)
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin:0px;
@@ -176,21 +177,21 @@ body {
     grid-template-columns: repeat(3, 210px);
 }
 
-.container img{
-    height: 200px;
-    width: 200px;
-}
-
 .container div{
     display: block;
     background-color: rgba(187, 187, 187, 0.9);
     grid-template-columns:1fr;
-    width: 250px;
-    height: 420px;
+    width: 210px;
+    height: 100%;
     padding: 10px 10px 10px 10px;
     text-align: center;
     margin-bottom: 10px;
     border-radius: 20px;
+}
+
+.container img{
+    height: 200px;
+    width: 200px;
 }
 
 .container div:hover{
@@ -207,7 +208,6 @@ body {
     font-size: medium;
 }
 
-
 button {
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);;
@@ -216,187 +216,5 @@ button {
         padding: 5px 5px 5px 5px;
     }
 
-    @media screen and (min-width: 600px) and (max-width: 1024px){
-
-    
-        .Leiste1 #box1 {
-            height: 25px;
-        }
-        
-        .navigatorrechts {
-            top: 3px;
-        }
-        
-        .navigatorrechts a{
-            font-size: 12px; 
-        }
-        
-        
-        .navigatorlinks *{
-            top: 5.5px;
-        }
-        
-        .navigatorlinks p{
-            font-size: 12px; 
-        }
-        
-    
-        .Leiste1 + .Leiste>#box { 
-            height: 100px;
-        }
-        
-        #logo{
-            top:5px;
-            width: 240px;
-        }
-        
-        
-        img[alt=Warenkorb]{
-            top: 80px; 
-            right: 95px; 
-            width:52px;
-        }
-        
-        #home{
-            top: 83px; 
-            right: 50px; 
-            width:60px;
-        }
-        
-        #menue img{
-            top: 70px; 
-            width:75px;
-        }
-        
-        
-        .container_ueberschrift div{
-            height: 70px;
-            width: 600px;
-            margin-top: 70px;
-            margin-left: 20px;
-        }
-    
-        .container{
-            grid-template-columns: repeat(3, 180px);
-            width: 100%;        
-        }
-    
-        .container div{
-            grid-template-columns:1fr;
-            width: 180px;
-        }
-    
-        h1{
-            font-size: 27px;
-        }
-        
-        .container img {
-            height: 150px ;
-        }
-      
-        .container p{
-            font-size:12px;
-        }
-    }
-    
-        @media screen and (max-width:600px){
-            
-        .Leiste1 #box1 {
-            height: 20px;
-        }
-        
-        
-        .navigatorrechts a{
-            font-size: 10px; 
-        }
-    
-        .navigatorrechts {
-            top: 0px;
-        }
-        
-        
-        .navigatorlinks p{
-            font-size: 10px; 
-            margin-top: 0px;
-        }
-        
-        .Leiste{
-            display:flexbox;
-        }
-        
-        .Leiste1 + .Leiste>#box {
-            height: 70px;
-        }
-        
-        #logo{
-            top: 10px;
-            width: 150px;
-        }
-        
-        
-        img[alt=Warenkorb]{
-            top: 60px; 
-            right: 75px; 
-            width:40px;
-        }
-        
-        
-        #home{
-            position: absolute;
-            top: 62px; 
-            right:40px; 
-            width:45px;
-        }
-        
-        
-        #menue img{
-            position: absolute;
-            top: 52px; 
-            right: 0px; 
-            width:57px;
-        }
-        
-        .inhalt{
-            width: 100px;
-        }
-    
-        h1{
-            font-size:22px;
-        }
-        
-        .container_ueberschrift div{
-            margin-left: 15px;
-            width: 440px;
-            height: 50px;
-            padding: 5px 5px 5px 5px; 
-            margin-top: 50px;
-            border-radius: 15px;
-        }
-    
-        .container{
-            grid-template-columns: repeat(2, 200px);
-            width: 100%;        
-        }
-    
-        .container div{
-            grid-template-columns:1fr;
-            width: 200px;
-        }
-       
-    
-        
-        .container img {
-            height: 150px ;
-        }
-    
-        .container .Produkt{
-            width:  210px;
-        }
-        
-        .container p{
-            font-size:12px;
-        }
-            
-        }
     
     
