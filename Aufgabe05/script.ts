@@ -22,7 +22,7 @@ interface Produkte {
 
 let kaktus: Produkte = {
     name: "LED-Kaktus",
-    bild: "kaktus.jpg",
+    bild: "Items/kaktus.jpg",
     beschreibung: "Ein grüner hell leuchtender LED-Kaktus! Eine Dekorative Bereicherung für alle Inneneinrichtungen.",
     farbe: "Grün",
     preis: "12,99€",
@@ -40,7 +40,7 @@ let kaktus: Produkte = {
 
 let flamingo: Produkte = {
     name: "LED-Flamingo",
-    bild: "Flamingo.jpg",
+    bild: "Items/Flamingo.jpg",
     beschreibung: "Eine rosa leuchtende prächtige LED-Flamingofigur",
     farbe: "Rosa",
     preis: "10,99€",
@@ -60,7 +60,7 @@ let flamingo: Produkte = {
 
 let blitz: Produkte = {
     name: "LED-Blitz",
-    bild: "Blitz.jpg",
+    bild: "Items/Blitz.jpg",
     beschreibung: "Eine LED-Blitz-Form zum aufhängen oder hinstellen. Eignet sich auch draußen",
     farbe: "Blau, Rot, Gelb, Rosa, Lila",
     preis: "15,99€",
@@ -80,7 +80,7 @@ let blitz: Produkte = {
 
 let eis: Produkte = {
     name: "LED-Eisschild",
-    bild: "Eis.jpg",
+    bild: "Items/Eis.jpg",
     beschreibung: "Ein großes Eis-LED schild mit verschiendenen Farben zum aufhängen.\rBatterie und Strombetrieb möglich. Lange LED Lebenszeit von über 50.000 Stunden",
     farbe: "Rosa-Gelb, Rot-Blau, Grün-Gelb, Rosa-Lila, Rot-Lila, Rot-Rosa",
     preis: "35,99€",
@@ -99,7 +99,7 @@ let eis: Produkte = {
 
 let lippen: Produkte = {
     name: "LED-Lippen",
-    bild: "Lippen.jpg",
+    bild: "Items/Lippen.jpg",
     beschreibung: "LED-Lippenform in verschiedenen Farben zum aufhängen.\rBatteriebetrieb möglich",
     farbe: "Blau, Rot, Rosa, Lila, Orange",
     preis: "9,99€",
@@ -121,7 +121,7 @@ let lippen: Produkte = {
 
 let goodvibes: Produkte = {
     name: "LED-GoodVibes Schriftzug",
-    bild: "GoodVibes.jpg",
+    bild: "Items/GoodVibes.jpg",
     beschreibung: "Ein Blauer-LED Good Vibes Schriftzug zum hinstellen oder aufhängen",
     farbe: "Blau, Rot, Rosa",
     preis: "36,99€",
@@ -141,7 +141,7 @@ let goodvibes: Produkte = {
 
 let hello: Produkte = {
     name: "LED-Hello Sprechblase Schriftzug",
-    bild: "Hello.jpg",
+    bild: "Items/Hello.jpg",
     beschreibung: "Eine LED Sprechblase mit der Innschrift : Hello.\rErhältlich in verschiedenen Farben",
     farbe: "Rosa-Weiß, Blau-Weiß, Rot-Weiß, Gelb-Weiß",
     preis: "35,99€",
@@ -159,7 +159,7 @@ let hello: Produkte = {
 
 let bar: Produkte = {
     name: "Neon-Rosa LED-Bar Schrift",
-    bild: "Bar.jpg",
+    bild: "Items/Bar.jpg",
     beschreibung: "Ein Rosa Neon - Bar Schriftzug.\rIdeal für zuhause oder für das Gewerbe. Beeindruckt jeden!",
     farbe: "Neon-Rosa",
     preis: "39,99€",
@@ -177,7 +177,7 @@ let bar: Produkte = {
 
 let fuckit: Produkte = {
     name: "Neon-Rosa LED-FuckIt Schriftzug",
-    bild: "Fuckit.jpg",
+    bild: "Items/Fuckit.jpg",
     beschreibung: "Eindrucksvoller F*ck it-Schriftzug.\rNetzteil nicht inbegriffen (benötigt : 5V 6A)",
     farbe: "Neon-Rosa",
     preis: "59,90€",
@@ -197,7 +197,7 @@ let fuckit: Produkte = {
 
 let ladyback: Produkte = {
     name: "ADV PRO Lady Back Sexy Girls Man Cave Dual Color LED Neonlicht",
-    bild: "Ladyback.jpg",
+    bild: "Items/Ladyback.jpg",
     beschreibung: "Gesamtgröße: B 300 mm x H 400 mm (W 12 x H 16).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
     preis: "59,99€",
@@ -215,7 +215,7 @@ let ladyback: Produkte = {
 
 let dragon: Produkte = {
     name: "ADV PRO Chinese Dragon Room Display Dual Color LED Neonlicht",
-    bild: "Dragon.jpg",
+    bild: "Items/Dragon.jpg",
     beschreibung: "Gesamtgröße: B 300 mm x H 400 mm (W 12 x H 16).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
     preis: "59,99€",
@@ -233,7 +233,7 @@ let dragon: Produkte = {
 
 let dancegirl: Produkte = {
     name: "ADV PRO Dance Girl Club Bar Pub Dual Color LED Barlicht Neonlicht",
-    bild: "Strip.jpg",
+    bild: "Items/Strip.jpg",
     beschreibung: "Gesamtgröße: B 400 mm x H 600 mm (W 16 x H 24).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
     preis: "119,99€",
@@ -252,7 +252,7 @@ let dancegirl: Produkte = {
 
 let trust: Produkte = {
     name: "ADV PRO Trust Me Love Me Fuck Me Décor Man Cave Nightclub Garage Dual Color LED Barlicht Neonlicht",
-    bild: "Trust.jpg",
+    bild: "Items/Trust.jpg",
     beschreibung: "Gesamtgröße: B 600 mm x H 400 mm (W 24 x H 16).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
     preis: "119,99€",
@@ -270,7 +270,7 @@ let trust: Produkte = {
 
 let fuckoff: Produkte = {
     name: "ADV PRO Fuck Off Man Cave Garage Dual Color LED Barlicht Neonlicht Lichtwerbung Neon Sign",
-    bild: "Fuckoff.jpg",
+    bild: "Items/Fuckoff.jpg",
     beschreibung: "Gesamtgröße: B 300 mm x H 210 mm (W 12 x H 8,5).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
     preis: "89,99€",
@@ -289,7 +289,7 @@ let fuckoff: Produkte = {
 
 let dowhat: Produkte = {
     name: "ADV PRO Do What You Love Bedroom Room Home Décor Dual Color LED Barlicht Neonlicht",
-    bild: "Dowhat.jpg",
+    bild: "Items/Dowhat.jpg",
     beschreibung: "Gesamtgröße: B 400 mm x H 300 mm (W 16 x H 12).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
     preis: "55,99€",
@@ -425,29 +425,29 @@ for (let i: number = 0; i < array.length; i++) {
         div.id = "produktfigur" + i;
         document.getElementById("figur")?.appendChild(div);
        
-        let bildFigur: HTMLImageElement = document.createElement("img");
-        bildFigur.src = array[i].bild;
-        document.getElementById("produktfigur" + i)?.appendChild(bildFigur);
+        let bildfigur: HTMLImageElement = document.createElement("img");
+        bildfigur.src = array[i].bild;
+        document.getElementById("produktfigur" + i)?.appendChild(bildfigur);
        
-        let nameFigur: HTMLElement = document.createElement("h1");
-        nameFigur.innerHTML = array[i].name;
-        document.getElementById("produkfigur" + i)?.appendChild(nameFigur);
+        let namefigur: HTMLElement = document.createElement("h1");
+        namefigur.innerHTML = array[i].name;
+        document.getElementById("produkfigur" + i)?.appendChild(namefigur);
  
-        let beschreibungFigur: HTMLElement = document.createElement("p");
-        beschreibungFigur.innerHTML = array[i].beschreibung;
-        document.getElementById("produktfigur" + i)?.appendChild(beschreibungFigur);
+        let beschreibungfigur: HTMLElement = document.createElement("p");
+        beschreibungfigur.innerHTML = array[i].beschreibung;
+        document.getElementById("produktfigur" + i)?.appendChild(beschreibungfigur);
 
-        let farbeFigur: HTMLElement = document.createElement("p");
-        farbeFigur.innerHTML = array[i].farbe;
-        document.getElementById("produktfigur" + i)?.appendChild(farbeFigur);
+        let farbefigur: HTMLElement = document.createElement("p");
+        farbefigur.innerHTML = array[i].farbe;
+        document.getElementById("produktfigur" + i)?.appendChild(farbefigur);
 
-        let wasserdichtFigur: HTMLElement = document.createElement("p");
-        wasserdichtFigur.innerHTML = array[i].wasserdicht;
-        document.getElementById("produktfigur" + i)?.appendChild(wasserdichtFigur);
+        let wasserdichtfigur: HTMLElement = document.createElement("p");
+        wasserdichtfigur.innerHTML = array[i].wasserdicht;
+        document.getElementById("produktfigur" + i)?.appendChild(wasserdichtfigur);
    
-        let preisFigur: HTMLElement = document.createElement("h2");
-        preisFigur.innerHTML = array[i].preis;
-        document.getElementById("produktfigur" + i)?.appendChild(preisFigur);
+        let preisfigur: HTMLElement = document.createElement("h2");
+        preisfigur.innerHTML = array[i].preis;
+        document.getElementById("produktfigur" + i)?.appendChild(preisfigur);
            
         let button: HTMLElement = document.createElement("button");
         document.getElementById(array[i].name)?.appendChild(button);
@@ -457,71 +457,71 @@ for (let i: number = 0; i < array.length; i++) {
     else if (array[i].schild) {
 
         let  div: HTMLDivElement = document.createElement("div");
-        div.id = "produktSchild" + i;
-        document.getElementById("Schild")?.appendChild(div);
+        div.id = "produktschild" + i;
+        document.getElementById("schild")?.appendChild(div);
        
-        let bildSchild: HTMLImageElement = document.createElement("img");
-        bildSchild.src = array[i].bild;
-        document.getElementById("produktSchild" + i)?.appendChild(bildSchild);
+        let bildschild: HTMLImageElement = document.createElement("img");
+        bildschild.src = array[i].bild;
+        document.getElementById("produktschild" + i)?.appendChild(bildschild);
        
-        let nameSchild: HTMLElement = document.createElement("h1");
-        nameSchild.innerHTML = array[i].name;
-        document.getElementById("produkSchild" + i)?.appendChild(nameSchild);
+        let nameschild: HTMLElement = document.createElement("h1");
+        nameschild.innerHTML = array[i].name;
+        document.getElementById("produkschild" + i)?.appendChild(nameschild);
  
-        let beschreibungSchild: HTMLElement = document.createElement("p");
-        beschreibungSchild.innerHTML = array[i].beschreibung;
-        document.getElementById("produktSchild" + i)?.appendChild(beschreibungSchild);
+        let beschreibungschild: HTMLElement = document.createElement("p");
+        beschreibungschild.innerHTML = array[i].beschreibung;
+        document.getElementById("produktschild" + i)?.appendChild(beschreibungschild);
 
-        let farbeSchild: HTMLElement = document.createElement("p");
-        farbeSchild.innerHTML = array[i].farbe;
-        document.getElementById("produktSchild" + i)?.appendChild(farbeSchild);
+        let farbeschild: HTMLElement = document.createElement("p");
+        farbeschild.innerHTML = array[i].farbe;
+        document.getElementById("produktschild" + i)?.appendChild(farbeschild);
 
-        let wasserdichtSchild: HTMLElement = document.createElement("p");
-        wasserdichtSchild.innerHTML = array[i].wasserdicht;
-        document.getElementById("produktSchild" + i)?.appendChild(wasserdichtSchild);
+        let wasserdichtschild: HTMLElement = document.createElement("p");
+        wasserdichtschild.innerHTML = array[i].wasserdicht;
+        document.getElementById("produktschild" + i)?.appendChild(wasserdichtschild);
    
-        let preisSchild: HTMLElement = document.createElement("h2");
-        preisSchild.innerHTML = array[i].preis;
-        document.getElementById("produktSchild" + i)?.appendChild(preisSchild);
+        let preisschild: HTMLElement = document.createElement("h2");
+        preisschild.innerHTML = array[i].preis;
+        document.getElementById("produktschild" + i)?.appendChild(preisschild);
            
         let button: HTMLElement = document.createElement("button");
         document.getElementById(array[i].name)?.appendChild(button);
-        document.getElementById("produktSchild" + i)?.appendChild(button);
+        document.getElementById("produktschild" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
 
     }
     else if (array[i].text) {
         let  div: HTMLDivElement = document.createElement("div");
-        div.id = "produktText" + i;
-        document.getElementById("Text")?.appendChild(div);
+        div.id = "produkttext" + i;
+        document.getElementById("text")?.appendChild(div);
        
-        let bildText: HTMLImageElement = document.createElement("img");
-        bildText.src = array[i].bild;
-        document.getElementById("produktText" + i)?.appendChild(bildText);
+        let bildtext: HTMLImageElement = document.createElement("img");
+        bildtext.src = array[i].bild;
+        document.getElementById("produkttext" + i)?.appendChild(bildtext);
        
-        let nameText: HTMLElement = document.createElement("h1");
-        nameText.innerHTML = array[i].name;
-        document.getElementById("produkText" + i)?.appendChild(nameText);
+        let nametext: HTMLElement = document.createElement("h1");
+        nametext.innerHTML = array[i].name;
+        document.getElementById("produktext" + i)?.appendChild(nametext);
  
-        let beschreibungText: HTMLElement = document.createElement("p");
-        beschreibungText.innerHTML = array[i].beschreibung;
-        document.getElementById("produktText" + i)?.appendChild(beschreibungText);
+        let beschreibungtext: HTMLElement = document.createElement("p");
+        beschreibungtext.innerHTML = array[i].beschreibung;
+        document.getElementById("produkttext" + i)?.appendChild(beschreibungtext);
 
-        let farbeText: HTMLElement = document.createElement("p");
-        farbeText.innerHTML = array[i].farbe;
-        document.getElementById("produktText" + i)?.appendChild(farbeText);
+        let farbetext: HTMLElement = document.createElement("p");
+        farbetext.innerHTML = array[i].farbe;
+        document.getElementById("produkttext" + i)?.appendChild(farbetext);
 
-        let wasserdichtText: HTMLElement = document.createElement("p");
-        wasserdichtText.innerHTML = array[i].wasserdicht;
-        document.getElementById("produktText" + i)?.appendChild(wasserdichtText);
+        let wasserdichttext: HTMLElement = document.createElement("p");
+        wasserdichttext.innerHTML = array[i].wasserdicht;
+        document.getElementById("produkttext" + i)?.appendChild(wasserdichttext);
    
-        let preisText: HTMLElement = document.createElement("h2");
-        preisText.innerHTML = array[i].preis;
-        document.getElementById("produktText" + i)?.appendChild(preisText);
+        let preistext: HTMLElement = document.createElement("h2");
+        preistext.innerHTML = array[i].preis;
+        document.getElementById("produkttext" + i)?.appendChild(preistext);
            
         let button: HTMLElement = document.createElement("button");
         document.getElementById(array[i].name)?.appendChild(button);
-        document.getElementById("produktText" + i)?.appendChild(button);
+        document.getElementById("produkttext" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
 
     }
