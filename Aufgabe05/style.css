@@ -173,7 +173,7 @@ body {
     display: flex;
     justify-content: center;
     grid-gap: 30px 30px;
-    grid-template-columns: repeat(4, 210px);
+    grid-template-columns: repeat(2, 210px);
 }
 
 .container img{
@@ -199,6 +199,12 @@ body {
 
 .container p{
     font-size: 12px;
+}
+.container h1{
+    font-size: large;
+}
+.container h2{
+    font-size: medium;
 }
 
 
