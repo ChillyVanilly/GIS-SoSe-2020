@@ -3,9 +3,144 @@ html{
 }
 body {
     text-align: center;
-    background-image: url(/Aufgabe05/Bg.jpg);
-    font-family: sans-serif;
+    background-image: url();
+    filter: blur();
+    font-family: Arial, Helvetica, sans-serif;
     margin:0px;
     padding:0px;
 }
+.Topleiste{
+    display:grid;
+}
 
+.Leiste1 #box1 {
+    position:realtive;
+    margin-top: 0px;
+    margin-left: 0px; 
+    margin-right: 0px;  
+    background-color: rgba(12, 13, 68, 0.986);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-style: ridge;
+    height: 30px;
+    width: 100%;
+}
+.Leiste1 > .navigatorrechts{
+    display: inline;
+    list-style: none; 
+}
+
+.navigatorrechts {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+    #suche {
+        width: 12em;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 0.5em;
+        border-style: hidden;
+        font-size: 1.2em;
+        transition: width 0.5s ease-in-out;
+    }
+    
+    #suche:focus {
+        font-size: 1.5em;
+        width: 100%;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 0.5em;
+        border-style: hidden;
+        font-size: 1.2em;
+        transition: width 0.5s ease-out;
+
+    }
+    .Leiste1> .linkeseite {
+        display: inline;
+        list-style: none; 
+    }
+    .linkeseite {
+        position: absolute;
+        left: 20px;
+        top: 5px;
+    }
+    .linkeseite p{
+        text-decoration: none;
+        color: white;
+        font-size: 15px; 
+        margin-top: 0px;
+    }
+    .Leiste{
+        display:grid;
+    }
+    
+    .Leiste1 + .Leiste>#box {
+        position: relative;
+        margin-top: 0px;
+        margin-left: 0px; 
+        margin-right: 0px;  
+        background-color: rgb(10, 0, 44);
+        height: 150px;
+        width: 100%;
+    }
+    .container_ueberschrift{
+        display: grid;
+        justify-content: center;
+        grid-gap: 30px 5px;
+    }
+    
+    .container_ueberschrift div{
+        background-color: rgba(187, 187, 187, 0.9);
+        width: 925px;
+        height: 80px;
+        padding: 10px 10px 10px 10px; 
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+    
+    .container{
+        display: grid;
+        grid-gap: 30px 30px;
+        justify-content: center;
+        grid-template-columns: repeat(4, 210px);
+        width: 100%;
+        
+    }
+    
+    .container img{
+        height: 200px ;
+    }
+    
+    .container div{
+        display:block;
+        justify-content:center;
+        grid-template-columns:1fr;
+        background-color: rgba(187, 187, 187, 0.9);
+        width: 210px;
+        height: 100%;
+        padding: 10px 10px 10px 10px; 
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    
+    .container div:hover{
+        background-color: white;
+    }
+    
+    .container p{
+        font-size:12px;
+    }
+    
+    
+    button {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);;
+            border-radius: 5px;
+            border-color: rgb(0, 0, 0);
+            padding: 5px 5px 5px 5px;
+        }
+    
+ 

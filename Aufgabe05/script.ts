@@ -435,7 +435,7 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktStripe" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
     }
-    else if (array[i].figur) {
+    /*else if (array[i].figur) {
         let  div: HTMLDivElement = document.createElement("div");
         div.id = "produktFigur" + i;
         document.getElementById("Figur")?.appendChild(div);
@@ -505,7 +505,7 @@ for (let i: number = 0; i < array.length; i++) {
         button.innerHTML = "In den Warenkorb";
 
     }
-    else if (array[i].text) {
+   /* else if (array[i].text) {
         let  div: HTMLDivElement = document.createElement("div");
         div.id = "produktText" + i;
         document.getElementById("Text")?.appendChild(div);
@@ -539,5 +539,5 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktText" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
 
-    }
+    }*/
 }
