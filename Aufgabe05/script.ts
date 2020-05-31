@@ -374,45 +374,45 @@ for (let i: number = 0; i < array.length; i++) {
         div.id = "produktstripe" + i;
         document.getElementById("stripe")?.appendChild(div);
        
-        let bildStreifen: HTMLImageElement = document.createElement("img");
-        bildStreifen.src = array[i].bild;
-        document.getElementById("produktstripe" + i)?.appendChild(bildStreifen);
+        let bildstripe: HTMLImageElement = document.createElement("img");
+        bildstripe.src = array[i].bild;
+        document.getElementById("produktstripe" + i)?.appendChild(bildstripe);
        
-        let nameStreifen: HTMLElement = document.createElement("h1");
-        nameStreifen.innerHTML = array[i].name;
-        document.getElementById("produkstripe" + i)?.appendChild(nameStreifen);
+        let namestripe: HTMLElement = document.createElement("h1");
+        namestripe.innerHTML = array[i].name;
+        document.getElementById("produkstripe" + i)?.appendChild(namestripe);
  
-        let beschreibungStreifen: HTMLElement = document.createElement("p");
-        beschreibungStreifen.innerHTML = array[i].beschreibung;
-        document.getElementById("produktstripe" + i)?.appendChild(beschreibungStreifen);
+        let beschreibungstripe: HTMLElement = document.createElement("p");
+        beschreibungstripe.innerHTML = array[i].beschreibung;
+        document.getElementById("produktstripe" + i)?.appendChild(beschreibungstripe);
 
-        let farbeStreifen: HTMLElement = document.createElement("p");
-        farbeStreifen.innerHTML = array[i].farbe;
-        document.getElementById("produktstripe" + i)?.appendChild(farbeStreifen);
+        let farbestripe: HTMLElement = document.createElement("p");
+        farbestripe.innerHTML = array[i].farbe;
+        document.getElementById("produktstripe" + i)?.appendChild(farbestripe);
 
-        let längeStreifen: HTMLElement = document.createElement("p");
-        längeStreifen.innerHTML = array[i].länge;
-        document.getElementById("produktStripe" + i)?.appendChild(längeStreifen);
+        let längestripe: HTMLElement = document.createElement("p");
+        längestripe.innerHTML = array[i].länge;
+        document.getElementById("produktstripe" + i)?.appendChild(längestripe);
 
-        let wasserdichtStreifen: HTMLElement = document.createElement("p");
-        wasserdichtStreifen.innerHTML = array[i].wasserdicht;
-        document.getElementById("produktstripe" + i)?.appendChild(wasserdichtStreifen);
+        let wasserdichtstripe: HTMLElement = document.createElement("p");
+        wasserdichtstripe.innerHTML = array[i].wasserdicht;
+        document.getElementById("produktstripe" + i)?.appendChild(wasserdichtstripe);
 
-        let wifiStreifen: HTMLElement = document.createElement("p");
-        wifiStreifen.innerHTML = array[i].wifi;
-        document.getElementById("produktstripe" + i)?.appendChild(wifiStreifen);
+        let wifistripe: HTMLElement = document.createElement("p");
+        wifistripe.innerHTML = array[i].wifi;
+        document.getElementById("produktstripe" + i)?.appendChild(wifistripe);
 
-        let smarthomeStreifen: HTMLElement = document.createElement("p");
-        smarthomeStreifen.innerHTML = array[i].smarthome;
-        document.getElementById("produktstripe" + i)?.appendChild(smarthomeStreifen);
+        let smarthomestripe: HTMLElement = document.createElement("p");
+        smarthomestripe.innerHTML = array[i].smarthome;
+        document.getElementById("produktstripe" + i)?.appendChild(smarthomestripe);
 
-        let programmierStreifen: HTMLElement = document.createElement("p");
-        programmierStreifen.innerHTML = array[i].programmierbar;
-        document.getElementById("produktstripe" + i)?.appendChild(programmierStreifen);
+        let programmierstripe: HTMLElement = document.createElement("p");
+        programmierstripe.innerHTML = array[i].programmierbar;
+        document.getElementById("produktstripe" + i)?.appendChild(programmierstripe);
    
-        let preisStreifen: HTMLElement = document.createElement("h2");
-        preisStreifen.innerHTML = array[i].preis;
-        document.getElementById("produktstripe" + i)?.appendChild(preisStreifen);
+        let preisstripe: HTMLElement = document.createElement("h2");
+        preisstripe.innerHTML = array[i].preis;
+        document.getElementById("produktstripe" + i)?.appendChild(preisstripe);
            
         let button: HTMLElement = document.createElement("button");
         document.getElementById(array[i].name)?.appendChild(button);
