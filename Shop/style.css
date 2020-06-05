@@ -37,14 +37,24 @@ body {
     right: 20px;
     top: 5px;
 }
-
-.navigatorrechts a{
-    text-decoration: none;
-    color: white;
-    font-size: 15px; 
-    margin-left: 20px;
-}
-
+    #suche {
+        width: 10em;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 0.5em;
+        border-style: hidden;
+        font-size: 1.2em;
+        transition: width 0.5s ease-in-out;
+    }
+    
+    #suche:focus {
+        font-size: 1.5em;
+        width: 100%;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 0.5em;
+        border-style: hidden;
+        font-size: 1.2em;
+        transition: width 0.5s ease-out;
+    }
 
 .navigatorlinks *{
     display: inline;
@@ -76,9 +86,10 @@ body {
 
 #logo{
     position: absolute;
-    top: 0px;
+    top: 35px;
     left: 0px;
-    width: 350px;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -145,7 +156,7 @@ img[alt=Warenkorb]{
     background-color: rgba(187, 187, 187, 0.9);
     width: 925px;
     height: 80px;
-    padding: 10px 10px 10px 10px; 
+    /*padding: 10px 10px 10px 10px; */
     text-align: center;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -155,7 +166,7 @@ img[alt=Warenkorb]{
 
 .container{
     display: grid;
-    grid-gap: 30px 30px;
+    grid-gap: 10px 10px;
     justify-content: center;
     grid-template-columns: repeat(4, 210px);
     width: 100%;
@@ -173,7 +184,7 @@ img[alt=Warenkorb]{
     background-color: rgba(187, 187, 187, 0.9);
     width: 210px;
     height: 100%;
-    padding: 10px 10px 10px 10px; 
+    /*padding: 10px 10px 10px 10px;*/
     text-align: center;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -185,6 +196,9 @@ img[alt=Warenkorb]{
 
 .container p{
     font-size:12px;
+}
+.container h1{
+    font-size: x-large;
 }
 
 

@@ -464,7 +464,7 @@ for (let i: number = 0; i < array.length; i++) {
        
         let nameschild: HTMLElement = document.createElement("h1");
         nameschild.innerHTML = array[i].name;
-        document.getElementById("produkschild" + i)?.appendChild(nameschild);
+        document.getElementById("produktschild" + i)?.appendChild(nameschild);
  
         let beschreibungschild: HTMLElement = document.createElement("p");
         beschreibungschild.innerHTML = array[i].beschreibung;

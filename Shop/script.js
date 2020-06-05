@@ -386,7 +386,7 @@ for (let i = 0; i < array.length; i++) {
         document.getElementById("produktschild" + i)?.appendChild(bildschild);
         let nameschild = document.createElement("h1");
         nameschild.innerHTML = array[i].name;
-        document.getElementById("produkschild" + i)?.appendChild(nameschild);
+        document.getElementById("produktschild" + i)?.appendChild(nameschild);
         let beschreibungschild = document.createElement("p");
         beschreibungschild.innerHTML = array[i].beschreibung;
         document.getElementById("produktschild" + i)?.appendChild(beschreibungschild);
