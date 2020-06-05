@@ -364,8 +364,26 @@ let govee3: Produkte = {
     stripe: true
 };
 
+let programmierbar1: Produkte = {
+    name: "WS2812B - Programmierbarer LED-Strip (144/m)",
+    bild: "Items/ws2812b.jpg",
+    beschreibung: "WS2812B LED-Strip. Jede einzelne LED ist ansteuerbar. Perfekt für eigene Lichtshows",
+    farbe: "Dreamcolor",
+    länge: "144s/m x2",
+    wasserdicht: "nicht wasserdicht",
+    wifi: "",
+    smarthome: "",
+    preis: "59,99€",
+    auflager: true,
+    programmierbar: "Programmierbar",
+    figur: false,
+    text: false,
+    schild: false,
+    stripe: true
+};
 
-let array: Array<Produkte> = [govee1, govee2, govee3, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
+
+let array: Array<Produkte> = [govee1, govee2, govee3, programmierbar1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
 for (let i: number = 0; i < array.length; i++) {
     if (array[i].stripe) {
         let  div: HTMLDivElement = document.createElement("div");
