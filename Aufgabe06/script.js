@@ -270,6 +270,77 @@ let programmierbar1 = {
     category: 4
 };
 let array = [govee1, govee2, govee3, programmierbar1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
+let category = [1, 2, 3, 4];
+/*for (let i: number = 0; i < array.length; i++) {
+    let newDiv: HTMLDivElement = document.createElement("div");
+    newDiv.id = "artikel" + i;
+
+    if (array[i].category == 1) {
+        document.getElementById("category1")?.appendChild(newDiv);
+    }
+    else if (array[i].category == 2) {
+        document.getElementById("category2")?.appendChild(newDiv);
+    }
+    if (array[i].category == 3) {
+        document.getElementById("category3")?.appendChild(newDiv);
+    }
+    if (array[i].category == 4) {
+        document.getElementById("category4")?.appendChild(newDiv);
+    }
+
+    //Gleiche Schleife - Anzeige erstellen
+    /*let  div: HTMLDivElement = document.createElement("div");
+    div.id = "produktstripe" + i;
+    document.getElementById("stripe")?.appendChild(div);*/
+/*let bildstripe: HTMLImageElement = document.createElement("img");
+bildstripe.src = array[i].bild;
+newDiv.appendChild(bildstripe) ;
+
+let namestripe: HTMLElement = document.createElement("h1");
+namestripe.innerHTML = array[i].name;
+newDiv.appendChild(namestripe);
+
+let beschreibungstripe: HTMLElement = document.createElement("p");
+beschreibungstripe.innerHTML = array[i].beschreibung;
+newDiv.appendChild(namestripe);
+
+let farbestripe: HTMLElement = document.createElement("p");
+farbestripe.innerHTML = array[i].farbe;
+newDiv.appendChild(namestripe);
+
+let längestripe: HTMLElement = document.createElement("p");
+längestripe.innerHTML = array[i].länge;
+newDiv.appendChild(namestripe);
+
+let wasserdichtstripe: HTMLElement = document.createElement("p");
+wasserdichtstripe.innerHTML = array[i].wasserdicht;
+newDiv.appendChild(namestripe);
+
+let wifistripe: HTMLElement = document.createElement("p");
+wifistripe.innerHTML = array[i].wifi;
+newDiv.appendChild(namestripe);
+
+let smarthomestripe: HTMLElement = document.createElement("p");
+smarthomestripe.innerHTML = array[i].smarthome;
+newDiv.appendChild(namestripe);
+
+let programmierstripe: HTMLElement = document.createElement("p");
+programmierstripe.innerHTML = array[i].programmierbar;
+newDiv.appendChild(namestripe);
+
+let preisstripe: HTMLElement = document.createElement("h2");
+preisstripe.innerHTML = array[i].preis + "€";
+document.getElementById("produktstripe" + i )?.appendChild(preisstripe);
+   
+let button: HTMLElement = document.createElement("button");
+button.innerHTML = "buy";
+button.addEventListener("click", handlefunction);
+document.getElementById(array[i].name)?.appendChild(button);
+button.setAttribute("preis", array[i].preis.toString());
+document.getElementById(array[i].name)?.appendChild(button);
+document.getElementById("produktstripe" + i)?.appendChild(button);
+button.innerHTML = "In den Warenkorb";
+}*/
 for (let i = 0; i < array.length; i++) {
     if (array[i].category == 4) {
         let div = document.createElement("div");
@@ -424,61 +495,148 @@ function handlefunction(_event) {
     }
     console.log(summe.toFixed(0));
 }
-let allCategory = document.createElement("a");
+/*
+
+let allCategory: HTMLAnchorElement = document.createElement("a");
 allCategory.id = "all";
 allCategory.innerHTML = "Übersicht";
 allCategory.addEventListener("click", handleKategorie);
 document.getElementById("allButton")?.appendChild(allCategory);
-let streifenCategory = document.createElement("a");
+
+let streifenCategory: HTMLAnchorElement = document.createElement("a");
 streifenCategory.id = "stripe";
 streifenCategory.innerHTML = "LED-Streifen";
 streifenCategory.addEventListener("click", handleKategorie);
 document.getElementById("stripeButton")?.appendChild(streifenCategory);
-let figurenCategory = document.createElement("a");
+
+let figurenCategory: HTMLAnchorElement = document.createElement("a");
 figurenCategory.id = "figur";
 figurenCategory.innerHTML = "Figuren";
 figurenCategory.addEventListener("click", handleKategorie);
 document.getElementById("figurButton")?.appendChild(figurenCategory);
-let schilderCategory = document.createElement("a");
+
+let schilderCategory: HTMLAnchorElement = document.createElement("a");
 schilderCategory.id = "schild";
 schilderCategory.innerHTML = "Schilder";
 schilderCategory.addEventListener("click", handleKategorie);
 document.getElementById("schildButton")?.appendChild(schilderCategory);
-let texteCategory = document.createElement("a");
+
+let texteCategory: HTMLAnchorElement = document.createElement("a");
 texteCategory.id = "text";
 texteCategory.innerHTML = "Texte";
 texteCategory.addEventListener("click", handleKategorie);
 document.getElementById("textButton")?.appendChild(texteCategory);
-function handleKategorie(_event) {
-    if (_event.currentTarget.getAttribute("id") == "all") {
-        document.getElementById("stripeButton").style.display = "block";
-        document.getElementById("figurButton").style.display = "block";
-        document.getElementById("schildButton").style.display = "block";
-        document.getElementById("textButton").style.display = "block";
-    }
-    else if (_event.currentTarget.getAttribute("id") == "stripe") {
-        document.getElementById("stripeButton").style.display = "block";
-        document.getElementById("figurButton").style.display = "none";
-        document.getElementById("schildButton").style.display = "none";
-        document.getElementById("textButton").style.display = "none";
+
+function handleKategorie(_event: Event): void {
+
+    if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "all") {
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "block";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "stripe") {
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "figur") {
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "schild") {
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "text") {
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "block";
+}
+
+}*/
+let kategorieStreifen = document.querySelector("#LStreifen");
+kategorieStreifen.id = "stripe";
+kategorieStreifen.addEventListener("click", handlerKategorie1);
+let kategorieFiguren = document.querySelector("#LStreifen");
+kategorieFiguren.id = "figur";
+kategorieFiguren.addEventListener("click", handlerKategorie1);
+let kategorieSchilder = document.querySelector("#LSchilder");
+kategorieSchilder.id = "schild";
+kategorieSchilder.addEventListener("click", handlerKategorie1);
+let kategorieTexte = document.querySelector("#LTexte");
+kategorieTexte.id = "text";
+kategorieTexte.addEventListener("click", handlerKategorie1);
+let kategorieBeide = document.querySelector("#home1");
+kategorieBeide.id = "home";
+kategorieBeide.addEventListener("click", handlerKategorie1);
+function handlerKategorie1(_event) {
+    if (_event.currentTarget.getAttribute("id") == "stripe") {
+        stripe();
     }
     else if (_event.currentTarget.getAttribute("id") == "figur") {
-        document.getElementById("stripeButton").style.display = "none";
-        document.getElementById("figurButton").style.display = "block";
-        document.getElementById("schildButton").style.display = "none";
-        document.getElementById("textButton").style.display = "none";
+        figur();
     }
     else if (_event.currentTarget.getAttribute("id") == "schild") {
-        document.getElementById("stripeButton").style.display = "none";
-        document.getElementById("figurButton").style.display = "none";
-        document.getElementById("schildButton").style.display = "block";
-        document.getElementById("textButton").style.display = "none";
+        schild();
     }
     else if (_event.currentTarget.getAttribute("id") == "text") {
-        document.getElementById("stripeButton").style.display = "none";
-        document.getElementById("figurButton").style.display = "none";
-        document.getElementById("schildButton").style.display = "none";
-        document.getElementById("textButton").style.display = "block";
+        text();
     }
+    else if (_event.currentTarget.getAttribute("id") == "alles") {
+        alles();
+    }
+}
+function stripe() {
+    document.getElementById("Streifen").style.display = "inline-grid";
+    document.getElementById("stripe_ueberschrift").style.display = "inline-grid";
+    document.getElementById("Figuren").style.display = "none";
+    document.getElementById("figur_ueberschrift").style.display = "none";
+    document.getElementById("Schilder").style.display = "none";
+    document.getElementById("schild_ueberschrift").style.display = "none";
+    document.getElementById("Texte").style.display = "none";
+    document.getElementById("text_ueberschrift").style.display = "none";
+}
+function figur() {
+    document.getElementById("Streifen").style.display = "none";
+    document.getElementById("stripe_ueberschrift").style.display = "none";
+    document.getElementById("Figuren").style.display = "inline-grid";
+    document.getElementById("figur_ueberschrift").style.display = "inline-grid";
+    document.getElementById("Schlider").style.display = "none";
+    document.getElementById("schild_ueberschrift").style.display = "none";
+    document.getElementById("Texte").style.display = "none";
+    document.getElementById("text_ueberschrift").style.display = "none";
+}
+function schild() {
+    document.getElementById("Streifen").style.display = "none";
+    document.getElementById("stripe_ueberschrift").style.display = "none";
+    document.getElementById("Figuren").style.display = "none";
+    document.getElementById("figur_ueberschrift").style.display = "none";
+    document.getElementById("Schilder").style.display = "inline-grid";
+    document.getElementById("schild_ueberschrift").style.display = "inline-grid";
+    document.getElementById("Texte").style.display = "none";
+    document.getElementById("text_ueberschrift").style.display = "none";
+}
+function text() {
+    document.getElementById("Streifen").style.display = "none";
+    document.getElementById("stripe_ueberschrift").style.display = "none";
+    document.getElementById("Figuren").style.display = "none";
+    document.getElementById("figur_ueberschrift").style.display = "none";
+    document.getElementById("Schilder").style.display = "none";
+    document.getElementById("schild_ueberschrift").style.display = "none";
+    document.getElementById("Texte").style.display = "inline-grid";
+    document.getElementById("text_ueberschrift").style.display = "inline-grid";
+}
+function alles() {
+    document.getElementById("Streifen").style.display = "inline-grid";
+    document.getElementById("stripe_ueberschrift").style.display = "inline-grid";
+    document.getElementById("Figuren").style.display = "inline-grid";
+    document.getElementById("figur_ueberschrift").style.display = "inline-grid";
+    document.getElementById("Schilder").style.display = "inline-grid";
+    document.getElementById("schild_ueberschrift").style.display = "inline-grid";
+    document.getElementById("Texte").style.display = "inline-grid";
+    document.getElementById("text_ueberschrift").style.display = "inline-grid";
 }
 //# sourceMappingURL=script.js.map
