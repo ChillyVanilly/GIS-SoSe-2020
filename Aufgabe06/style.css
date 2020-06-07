@@ -102,10 +102,9 @@ img[alt=Warenkorb]{
 #warencounter{
     position: fixed;
     margin-left: 90%;
-    margin-top: 9%;
+    margin-top: 7%;
     width: 15px;
     border-radius: 10%;
-    border-style: groove;
     font-size: 15px;
     color: white;
     height: 15px;
