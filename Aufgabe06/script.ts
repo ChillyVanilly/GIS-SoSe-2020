@@ -521,3 +521,63 @@ function handlefunction(_event: Event): void {
     console.log(summe.toFixed(0));
 }
 
+let allCategory: HTMLAnchorElement = document.createElement("a");
+allCategory.id = "all";
+allCategory.innerHTML = "Übersicht";
+allCategory.addEventListener("click", handleKategorie);
+document.getElementById("allButton")?.appendChild(allCategory);
+
+let streifenCategory: HTMLAnchorElement = document.createElement("a");
+streifenCategory.id = "stripe";
+streifenCategory.innerHTML = "LED-Streifen";
+streifenCategory.addEventListener("click", handleKategorie);
+document.getElementById("stripeButton")?.appendChild(streifenCategory);
+
+let figurenCategory: HTMLAnchorElement = document.createElement("a");
+figurenCategory.id = "figur";
+figurenCategory.innerHTML = "Figuren";
+figurenCategory.addEventListener("click", handleKategorie);
+document.getElementById("figurButton")?.appendChild(figurenCategory);
+
+let schilderCategory: HTMLAnchorElement = document.createElement("a");
+schilderCategory.id = "schild";
+schilderCategory.innerHTML = "Schilder";
+schilderCategory.addEventListener("click", handleKategorie);
+document.getElementById("schildButton")?.appendChild(schilderCategory);
+
+let texteCategory: HTMLAnchorElement = document.createElement("a");
+texteCategory.id = "text";
+texteCategory.innerHTML = "Texte";
+texteCategory.addEventListener("click", handleKategorie);
+document.getElementById("textButton")?.appendChild(texteCategory);
+
+function handleKategorie(_event: Event): void {
+
+    if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "all") {
+        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "stripe") {
+        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "figur") {
+        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "schild") {
+        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "text") {
+        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+}
+
+}

@@ -80,7 +80,7 @@ body {
     margin-left: 0px; 
     margin-right: 0px;  
     background-color: rgba(105, 3, 145, 0.473);
-    height: 150px;
+    height: 180px;
     width: 100%;
 }
 
@@ -247,7 +247,7 @@ button {
     
 
     .Leiste1 + .Leiste>#box { 
-        height: 100px;
+        height: 130px;
     }
     
     #logo{
@@ -330,7 +330,7 @@ button {
     }
     
     .Leiste1 + .Leiste>#box {
-        height: 70px;
+        height: 90px;
     }
     
     #logo{

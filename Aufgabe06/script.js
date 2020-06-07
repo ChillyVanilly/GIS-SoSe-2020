@@ -424,4 +424,61 @@ function handlefunction(_event) {
     }
     console.log(summe.toFixed(0));
 }
+let allCategory = document.createElement("a");
+allCategory.id = "all";
+allCategory.innerHTML = "Übersicht";
+allCategory.addEventListener("click", handleKategorie);
+document.getElementById("allButton")?.appendChild(allCategory);
+let streifenCategory = document.createElement("a");
+streifenCategory.id = "stripe";
+streifenCategory.innerHTML = "LED-Streifen";
+streifenCategory.addEventListener("click", handleKategorie);
+document.getElementById("stripeButton")?.appendChild(streifenCategory);
+let figurenCategory = document.createElement("a");
+figurenCategory.id = "figur";
+figurenCategory.innerHTML = "Figuren";
+figurenCategory.addEventListener("click", handleKategorie);
+document.getElementById("figurButton")?.appendChild(figurenCategory);
+let schilderCategory = document.createElement("a");
+schilderCategory.id = "schild";
+schilderCategory.innerHTML = "Schilder";
+schilderCategory.addEventListener("click", handleKategorie);
+document.getElementById("schildButton")?.appendChild(schilderCategory);
+let texteCategory = document.createElement("a");
+texteCategory.id = "text";
+texteCategory.innerHTML = "Texte";
+texteCategory.addEventListener("click", handleKategorie);
+document.getElementById("textButton")?.appendChild(texteCategory);
+function handleKategorie(_event) {
+    if (_event.currentTarget.getAttribute("id") == "all") {
+        document.getElementById("stripeBlock").style.display = "block";
+        document.getElementById("figurBlock").style.display = "block";
+        document.getElementById("schildBlock").style.display = "block";
+        document.getElementById("textBlock").style.display = "block";
+    }
+    else if (_event.currentTarget.getAttribute("id") == "stripe") {
+        document.getElementById("stripeBlock").style.display = "block";
+        document.getElementById("figurBlock").style.display = "none";
+        document.getElementById("schildBlock").style.display = "none";
+        document.getElementById("textBlock").style.display = "none";
+    }
+    else if (_event.currentTarget.getAttribute("id") == "figur") {
+        document.getElementById("stripeBlock").style.display = "none";
+        document.getElementById("figurBlock").style.display = "block";
+        document.getElementById("schildBlock").style.display = "none";
+        document.getElementById("textBlock").style.display = "none";
+    }
+    else if (_event.currentTarget.getAttribute("id") == "schild") {
+        document.getElementById("stripeBlock").style.display = "none";
+        document.getElementById("figurBlock").style.display = "none";
+        document.getElementById("schildBlock").style.display = "block";
+        document.getElementById("textBlock").style.display = "none";
+    }
+    else if (_event.currentTarget.getAttribute("id") == "text") {
+        document.getElementById("stripeBlock").style.display = "none";
+        document.getElementById("figurBlock").style.display = "none";
+        document.getElementById("schildBlock").style.display = "none";
+        document.getElementById("textBlock").style.display = "block";
+    }
+}
 //# sourceMappingURL=script.js.map
