@@ -554,30 +554,30 @@ document.getElementById("textButton")?.appendChild(texteCategory);
 function handleKategorie(_event: Event): void {
 
     if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "all") {
-        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "block";
     } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "stripe") {
-        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
     } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "figur") {
-        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
     } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "schild") {
-        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
     } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "text") {
-        (<HTMLDivElement>document.getElementById("stripeBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
+        (<HTMLDivElement>document.getElementById("textButton")).style.display = "block";
 }
 
 }

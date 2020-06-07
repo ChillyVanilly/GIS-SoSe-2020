@@ -451,34 +451,34 @@ texteCategory.addEventListener("click", handleKategorie);
 document.getElementById("textButton")?.appendChild(texteCategory);
 function handleKategorie(_event) {
     if (_event.currentTarget.getAttribute("id") == "all") {
-        document.getElementById("stripeBlock").style.display = "block";
-        document.getElementById("figurBlock").style.display = "block";
-        document.getElementById("schildBlock").style.display = "block";
-        document.getElementById("textBlock").style.display = "block";
+        document.getElementById("stripeButton").style.display = "block";
+        document.getElementById("figurButton").style.display = "block";
+        document.getElementById("schildButton").style.display = "block";
+        document.getElementById("textButton").style.display = "block";
     }
     else if (_event.currentTarget.getAttribute("id") == "stripe") {
-        document.getElementById("stripeBlock").style.display = "block";
-        document.getElementById("figurBlock").style.display = "none";
-        document.getElementById("schildBlock").style.display = "none";
-        document.getElementById("textBlock").style.display = "none";
+        document.getElementById("stripeButton").style.display = "block";
+        document.getElementById("figurButton").style.display = "none";
+        document.getElementById("schildButton").style.display = "none";
+        document.getElementById("textButton").style.display = "none";
     }
     else if (_event.currentTarget.getAttribute("id") == "figur") {
-        document.getElementById("stripeBlock").style.display = "none";
-        document.getElementById("figurBlock").style.display = "block";
-        document.getElementById("schildBlock").style.display = "none";
-        document.getElementById("textBlock").style.display = "none";
+        document.getElementById("stripeButton").style.display = "none";
+        document.getElementById("figurButton").style.display = "block";
+        document.getElementById("schildButton").style.display = "none";
+        document.getElementById("textButton").style.display = "none";
     }
     else if (_event.currentTarget.getAttribute("id") == "schild") {
-        document.getElementById("stripeBlock").style.display = "none";
-        document.getElementById("figurBlock").style.display = "none";
-        document.getElementById("schildBlock").style.display = "block";
-        document.getElementById("textBlock").style.display = "none";
+        document.getElementById("stripeButton").style.display = "none";
+        document.getElementById("figurButton").style.display = "none";
+        document.getElementById("schildButton").style.display = "block";
+        document.getElementById("textButton").style.display = "none";
     }
     else if (_event.currentTarget.getAttribute("id") == "text") {
-        document.getElementById("stripeBlock").style.display = "none";
-        document.getElementById("figurBlock").style.display = "none";
-        document.getElementById("schildBlock").style.display = "none";
-        document.getElementById("textBlock").style.display = "block";
+        document.getElementById("stripeButton").style.display = "none";
+        document.getElementById("figurButton").style.display = "none";
+        document.getElementById("schildButton").style.display = "none";
+        document.getElementById("textButton").style.display = "block";
     }
 }
 //# sourceMappingURL=script.js.map
