@@ -271,6 +271,7 @@ let programmierbar1 = {
 };
 let array = [govee1, govee2, govee3, programmierbar1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
 let category = [1, 2, 3, 4];
+//Alte Schleife *Backup
 /*for (let i: number = 0; i < array.length; i++) {
     let newDiv: HTMLDivElement = document.createElement("div");
     newDiv.id = "artikel" + i;
@@ -495,68 +496,7 @@ function handlefunction(_event) {
     }
     console.log(summe.toFixed(0));
 }
-/*
-
-let allCategory: HTMLAnchorElement = document.createElement("a");
-allCategory.id = "all";
-allCategory.innerHTML = "Übersicht";
-allCategory.addEventListener("click", handleKategorie);
-document.getElementById("allButton")?.appendChild(allCategory);
-
-let streifenCategory: HTMLAnchorElement = document.createElement("a");
-streifenCategory.id = "stripe";
-streifenCategory.innerHTML = "LED-Streifen";
-streifenCategory.addEventListener("click", handleKategorie);
-document.getElementById("stripeButton")?.appendChild(streifenCategory);
-
-let figurenCategory: HTMLAnchorElement = document.createElement("a");
-figurenCategory.id = "figur";
-figurenCategory.innerHTML = "Figuren";
-figurenCategory.addEventListener("click", handleKategorie);
-document.getElementById("figurButton")?.appendChild(figurenCategory);
-
-let schilderCategory: HTMLAnchorElement = document.createElement("a");
-schilderCategory.id = "schild";
-schilderCategory.innerHTML = "Schilder";
-schilderCategory.addEventListener("click", handleKategorie);
-document.getElementById("schildButton")?.appendChild(schilderCategory);
-
-let texteCategory: HTMLAnchorElement = document.createElement("a");
-texteCategory.id = "text";
-texteCategory.innerHTML = "Texte";
-texteCategory.addEventListener("click", handleKategorie);
-document.getElementById("textButton")?.appendChild(texteCategory);
-
-function handleKategorie(_event: Event): void {
-
-    if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "all") {
-        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("textButton")).style.display = "block";
-    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "stripe") {
-        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
-    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "figur") {
-        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
-    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "schild") {
-        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "block";
-        (<HTMLDivElement>document.getElementById("textButton")).style.display = "none";
-    } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "text") {
-        (<HTMLDivElement>document.getElementById("stripeButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("figurButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("schildButton")).style.display = "none";
-        (<HTMLDivElement>document.getElementById("textButton")).style.display = "block";
-}
-
-}*/
+//Aufgabe 2
 let kategorieStreifen = document.querySelector("#LStreifen");
 kategorieStreifen.id = "stripe";
 kategorieStreifen.addEventListener("click", handlerKategorie1);
