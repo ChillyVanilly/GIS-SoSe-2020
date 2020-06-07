@@ -1,16 +1,12 @@
-"use strict";
-/*interface Produkte {
+interface Produkte {
     name: string;
     bild: string;
     beschreibung: string;
     farbe: string;
-    preis: string;
+    preis: number;
     auflager: boolean;
     programmierbar: string;
-    figur: boolean;
-    text: boolean;
-    schild: boolean;
-    stripe: boolean;
+    category: number;
     länge: string;
     wifi: string;
     wasserdicht: string;
@@ -26,13 +22,10 @@ let kaktus: Produkte = {
     bild: "Items/kaktus.jpg",
     beschreibung: "Ein grüner hell leuchtender LED-Kaktus! Eine Dekorative Bereicherung für alle Inneneinrichtungen.",
     farbe: "Grün",
-    preis: "12,99€",
+    preis: 12.99,
     auflager: true,
     programmierbar: "",
-    figur: true,
-    text: false,
-    schild: false,
-    stripe: false,
+    category: 1,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -44,13 +37,10 @@ let flamingo: Produkte = {
     bild: "Items/Flamingo.jpg",
     beschreibung: "Eine rosa leuchtende prächtige LED-Flamingofigur",
     farbe: "Rosa",
-    preis: "10,99€",
+    preis: 10.99,
     auflager: true,
     programmierbar: "",
-    figur: true,
-    text: false,
-    schild: false,
-    stripe: false,
+    category: 1,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -64,13 +54,10 @@ let blitz: Produkte = {
     bild: "Items/Blitz.jpg",
     beschreibung: "Eine LED-Blitz-Form zum aufhängen oder hinstellen. Eignet sich auch draußen",
     farbe: "Blau, Rot, Gelb, Rosa, Lila",
-    preis: "15,99€",
+    preis: 15.99,
     auflager: true,
     programmierbar: "",
-    figur: true,
-    text: false,
-    schild: false,
-    stripe: false,
+    category: 1,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -84,13 +71,10 @@ let eis: Produkte = {
     bild: "Items/Eis.jpg",
     beschreibung: "Ein großes Eis-LED schild mit verschiendenen Farben zum aufhängen.\rBatterie und Strombetrieb möglich. Lange LED Lebenszeit von über 50.000 Stunden",
     farbe: "Rosa-Gelb, Rot-Blau, Grün-Gelb, Rosa-Lila, Rot-Lila, Rot-Rosa",
-    preis: "35,99€",
+    preis: 35.99,
     auflager: true,
     programmierbar: "",
-    figur: true,
-    text: false,
-    schild: false,
-    stripe: false,
+    category: 1,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -103,16 +87,13 @@ let lippen: Produkte = {
     bild: "Items/Lippen.jpg",
     beschreibung: "LED-Lippenform in verschiedenen Farben zum aufhängen.\rBatteriebetrieb möglich",
     farbe: "Blau, Rot, Rosa, Lila, Orange",
-    preis: "9,99€",
+    preis: 9.99,
     auflager: true,
     programmierbar: "",
-    figur: true,
-    text: false,
-    schild: false,
-    stripe: false,
+    category: 1,
     wasserdicht: "",
     wifi: "",
-    länge: "",
+    länge: "",    
     smarthome: ""
 
 
@@ -125,13 +106,10 @@ let goodvibes: Produkte = {
     bild: "Items/GoodVibes.jpg",
     beschreibung: "Ein Blauer-LED Good Vibes Schriftzug zum hinstellen oder aufhängen",
     farbe: "Blau, Rot, Rosa",
-    preis: "36,99€",
+    preis: 36.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: true,
-    schild: false,
-    stripe: false,
+    category: 2,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -145,13 +123,10 @@ let hello: Produkte = {
     bild: "Items/Hello.jpg",
     beschreibung: "Eine LED Sprechblase mit der Innschrift : Hello.\rErhältlich in verschiedenen Farben",
     farbe: "Rosa-Weiß, Blau-Weiß, Rot-Weiß, Gelb-Weiß",
-    preis: "35,99€",
+    preis: 35.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: true,
-    schild: false,
-    stripe: false,
+    category: 2,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -163,13 +138,10 @@ let bar: Produkte = {
     bild: "Items/Bar.jpg",
     beschreibung: "Ein Rosa Neon - Bar Schriftzug.\rIdeal für zuhause oder für das Gewerbe. Beeindruckt jeden!",
     farbe: "Neon-Rosa",
-    preis: "39,99€",
+    preis: 39.99,
     auflager: false,
     programmierbar: "",
-    figur: false,
-    text: true,
-    schild: false,
-    stripe: false,
+    category: 2,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -181,13 +153,10 @@ let fuckit: Produkte = {
     bild: "Items/Fuckit.jpg",
     beschreibung: "Eindrucksvoller F*ck it-Schriftzug.\rNetzteil nicht inbegriffen (benötigt : 5V 6A)",
     farbe: "Neon-Rosa",
-    preis: "59,90€",
+    preis: 59.90,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: true,
-    schild: false,
-    stripe: false,
+    category: 2,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -201,13 +170,10 @@ let ladyback: Produkte = {
     bild: "Items/Ladyback.jpg",
     beschreibung: "Gesamtgröße: B 300 mm x H 400 mm (W 12 x H 16).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
-    preis: "59,99€",
+    preis: 59.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: false,
-    schild: true,
-    stripe: false,
+    category: 3,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -219,13 +185,10 @@ let dragon: Produkte = {
     bild: "Items/Dragon.jpg",
     beschreibung: "Gesamtgröße: B 300 mm x H 400 mm (W 12 x H 16).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
-    preis: "59,99€",
+    preis: 59.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: false,
-    schild: true,
-    stripe: false,
+    category: 3,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -237,13 +200,10 @@ let dancegirl: Produkte = {
     bild: "Items/Strip.jpg",
     beschreibung: "Gesamtgröße: B 400 mm x H 600 mm (W 16 x H 24).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
-    preis: "119,99€",
+    preis: 119.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: false,
-    schild: true,
-    stripe: false,
+    category: 3,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -256,13 +216,10 @@ let trust: Produkte = {
     bild: "Items/Trust.jpg",
     beschreibung: "Gesamtgröße: B 600 mm x H 400 mm (W 24 x H 16).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
-    preis: "119,99€",
+    preis: 119.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: false,
-    schild: true,
-    stripe: false,
+    category: 3,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -274,13 +231,10 @@ let fuckoff: Produkte = {
     bild: "Items/Fuckoff.jpg",
     beschreibung: "Gesamtgröße: B 300 mm x H 210 mm (W 12 x H 8,5).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
-    preis: "89,99€",
+    preis: 89.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: false,
-    schild: true,
-    stripe: false,
+    category: 3,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -293,13 +247,10 @@ let dowhat: Produkte = {
     bild: "Items/Dowhat.jpg",
     beschreibung: "Gesamtgröße: B 400 mm x H 300 mm (W 16 x H 12).",
     farbe: "Blau-Rot, Blau-Weiß, Rot-Weiß, Rot-Rosa, Gelb-Weiß, Gelb-Orange, Blau-Grün, Grün-Weiß, Rosa-Weiß, Rosa-Lila, Blau-Lila, Lila-Weiß",
-    preis: "55,99€",
+    preis: 55.99,
     auflager: true,
     programmierbar: "",
-    figur: false,
-    text: false,
-    schild: true,
-    stripe: false,
+    category: 3,
     wasserdicht: "",
     wifi: "",
     länge: "",
@@ -319,13 +270,10 @@ let govee1: Produkte = {
     wasserdicht: "Wasserdicht",
     wifi: "WIFI-Compatibel",
     smarthome: "Smarthome System Compatibel",
-    preis: "30,99€",
+    preis: 30.99,
     auflager: true,
     programmierbar: "Nicht Programmierbar",
-    figur: false,
-    text: false,
-    schild: false,
-    stripe: true
+    category: 4
 
 };
 
@@ -338,13 +286,10 @@ let govee2: Produkte = {
     wasserdicht: "Nicht Wasserdicht",
     wifi: "WIFI-Compatibel",
     smarthome: "Smarthome System Compatibel",
-    preis: "28,99€",
+    preis: 28.99,
     auflager: true,
     programmierbar: "Nicht Programmierbar",
-    figur: false,
-    text: false,
-    schild: false,
-    stripe: true
+    category: 4
 };
 
 let govee3: Produkte = {
@@ -356,13 +301,10 @@ let govee3: Produkte = {
     wasserdicht: "Wasserdicht",
     wifi: "WIFI-Compatibel",
     smarthome: "Smarthome - Nicht Compatibel",
-    preis: "39,99€",
+    preis: 39.99,
     auflager: true,
     programmierbar: "Nicht Programmierbar",
-    figur: false,
-    text: false,
-    schild: false,
-    stripe: true
+    category: 4
 };
 
 let programmierbar1: Produkte = {
@@ -374,19 +316,16 @@ let programmierbar1: Produkte = {
     wasserdicht: "nicht wasserdicht",
     wifi: "",
     smarthome: "",
-    preis: "59,99€",
+    preis: 59.99,
     auflager: true,
     programmierbar: "Programmierbar",
-    figur: false,
-    text: false,
-    schild: false,
-    stripe: true
+    category: 4
 };
 
 
 let array: Array<Produkte> = [govee1, govee2, govee3, programmierbar1, flamingo, kaktus, blitz, eis, lippen, bar, fuckit, hello, goodvibes, ladyback, fuckoff, dragon, dowhat, dancegirl, trust];
 for (let i: number = 0; i < array.length; i++) {
-    if (array[i].stripe) {
+    if (array[i].category == 4) {
         let  div: HTMLDivElement = document.createElement("div");
         div.id = "produktstripe" + i;
         document.getElementById("stripe")?.appendChild(div);
@@ -428,16 +367,20 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktstripe" + i)?.appendChild(programmierstripe);
    
         let preisstripe: HTMLElement = document.createElement("h2");
-        preisstripe.innerHTML = array[i].preis;
-        document.getElementById("produktstripe" + i)?.appendChild(preisstripe);
+        preisstripe.innerHTML = array[i].preis + "€";
+        document.getElementById("produktstripe" + i )?.appendChild(preisstripe);
            
         let button: HTMLElement = document.createElement("button");
+        button.innerHTML = "buy";
+        button.addEventListener("click", handlefunction);
+        document.getElementById(array[i].name)?.appendChild(button);
+        button.setAttribute("preis", array[i].preis.toString());
         document.getElementById(array[i].name)?.appendChild(button);
         document.getElementById("produktstripe" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
     }
 
-    else if (array[i].figur) {
+    else if (array[i].category == 1) {
         let  div: HTMLDivElement = document.createElement("div");
         div.id = "produktfigur" + i;
         document.getElementById("figur")?.appendChild(div);
@@ -463,15 +406,19 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktfigur" + i)?.appendChild(wasserdichtfigur);
    
         let preisfigur: HTMLElement = document.createElement("h2");
-        preisfigur.innerHTML = array[i].preis;
+        preisfigur.innerHTML = array[i].preis  + "€";
         document.getElementById("produktfigur" + i)?.appendChild(preisfigur);
            
         let button: HTMLElement = document.createElement("button");
+        button.innerHTML = "buy";
+        button.addEventListener("click", handlefunction);
+        document.getElementById(array[i].name)?.appendChild(button);
+        button.setAttribute("preis", array[i].preis.toString());
         document.getElementById(array[i].name)?.appendChild(button);
         document.getElementById("produktfigur" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
     }
-    else if (array[i].schild) {
+    else if (array[i].category == 3) {
 
         let  div: HTMLDivElement = document.createElement("div");
         div.id = "produktschild" + i;
@@ -498,16 +445,21 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produktschild" + i)?.appendChild(wasserdichtschild);
    
         let preisschild: HTMLElement = document.createElement("h2");
-        preisschild.innerHTML = array[i].preis;
+        preisschild.innerHTML = array[i].preis  + "€";
         document.getElementById("produktschild" + i)?.appendChild(preisschild);
            
         let button: HTMLElement = document.createElement("button");
+        button.innerHTML = "buy";
+        button.addEventListener("click", handlefunction);
+        document.getElementById(array[i].name)?.appendChild(button);
+        button.setAttribute("preis", array[i].preis.toString());
         document.getElementById(array[i].name)?.appendChild(button);
         document.getElementById("produktschild" + i)?.appendChild(button);
-        button.innerHTML = "In den Warenkorb";
+        button.innerHTML  = "In den Warenkorb";
+        
 
     }
-    else if (array[i].text) {
+    else if (array[i].category == 2) {
         let  div: HTMLDivElement = document.createElement("div");
         div.id = "produkttext" + i;
         document.getElementById("text")?.appendChild(div);
@@ -533,14 +485,39 @@ for (let i: number = 0; i < array.length; i++) {
         document.getElementById("produkttext" + i)?.appendChild(wasserdichttext);
    
         let preistext: HTMLElement = document.createElement("h2");
-        preistext.innerHTML = array[i].preis;
+        preistext.innerHTML = array[i].preis  + "€";
         document.getElementById("produkttext" + i)?.appendChild(preistext);
            
         let button: HTMLElement = document.createElement("button");
+        button.innerHTML = "buy";
+        button.addEventListener("click", handlefunction);
         document.getElementById(array[i].name)?.appendChild(button);
+        button.setAttribute("preis", array[i].preis.toString());
         document.getElementById("produkttext" + i)?.appendChild(button);
         button.innerHTML = "In den Warenkorb";
 
+
     }
-}*/
-//# sourceMappingURL=script.js.map
+}
+
+//Warenkorb
+
+let summe: number = 0;
+let count: number = 0;
+let arrayCounter: number = 0;
+let bubbleDiv: HTMLDivElement = document.createElement("div");
+
+function handlefunction(_event: Event): void {
+    if (arrayCounter >= 0) {
+        document.getElementById ("warencounter")?.appendChild(bubbleDiv);
+    }
+    arrayCounter++;
+    bubbleDiv.innerHTML = arrayCounter + "";
+
+    if ( (<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")) {
+        summe = count + parseInt((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
+        count = summe;
+    }
+    console.log(summe.toFixed(0));
+}
+

@@ -1,4 +1,4 @@
-interface Produkte {
+/*interface Produkte {
     name: string;
     bild: string;
     beschreibung: string;
@@ -541,4 +541,4 @@ for (let i: number = 0; i < array.length; i++) {
         button.innerHTML = "In den Warenkorb";
 
     }
-}
+}*/
