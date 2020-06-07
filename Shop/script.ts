@@ -22,7 +22,7 @@ interface Produkte {
 
 let kaktus: Produkte = {
     name: "LED-Kaktus",
-    bild: "Items/kaktus.jpg",
+    bild: "Items/Kaktus.jpg",
     beschreibung: "Ein grüner hell leuchtender LED-Kaktus! Eine Dekorative Bereicherung für alle Inneneinrichtungen.",
     farbe: "Grün",
     preis: "12,99€",
