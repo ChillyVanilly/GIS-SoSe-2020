@@ -592,10 +592,10 @@ function handlefunction(_event: Event): void {
     bubbleDiv.innerHTML = arrayCounter + "";
 
     if ( (<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")) {
-        summe = count + parseInt((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
+        summe = count + parseFloat((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
         count = summe;
     }
-    console.log(summe.toFixed(0));
+    console.log(summe + "€");    
 }
 
 //Aufgabe 2

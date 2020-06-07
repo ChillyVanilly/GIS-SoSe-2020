@@ -491,10 +491,10 @@ function handlefunction(_event) {
     arrayCounter++;
     bubbleDiv.innerHTML = arrayCounter + "";
     if (_event.currentTarget?.getAttribute("preis")) {
-        summe = count + parseInt(_event.currentTarget?.getAttribute("preis"));
+        summe = count + parseFloat(_event.currentTarget?.getAttribute("preis"));
         count = summe;
     }
-    console.log(summe.toFixed(0));
+    console.log(summe + "€");
 }
 //Aufgabe 2
 let kategorieStreifen = document.querySelector("#LStreifen");
