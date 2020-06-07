@@ -661,7 +661,7 @@ let kategorieStreifen: HTMLAnchorElement = <HTMLAnchorElement>document.querySele
 kategorieStreifen.id = "stripe";
 kategorieStreifen.addEventListener("click", handlerKategorie1);
 
-let kategorieFiguren: HTMLAnchorElement = <HTMLAnchorElement>document.querySelector("#LStreifen");
+let kategorieFiguren: HTMLAnchorElement = <HTMLAnchorElement>document.querySelector("#LFiguren");
 kategorieFiguren.id = "figur";
 kategorieFiguren.addEventListener("click", handlerKategorie1);
 
@@ -701,55 +701,55 @@ function handlerKategorie1 (_event: Event): void  {
 }
 
 function stripe(): void {
-    (<HTMLElement>document.getElementById("Streifen")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("stripe")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("stripe_ueberschrift")).style.display = "inline-grid";
-    (<HTMLElement>document.getElementById("Figuren")).style.display = "none";
+    (<HTMLElement>document.getElementById("figur")).style.display = "none";
     (<HTMLElement>document.getElementById("figur_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Schilder")).style.display = "none";
+    (<HTMLElement>document.getElementById("schild")).style.display = "none";
     (<HTMLElement>document.getElementById("schild_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Texte")).style.display = "none";
+    (<HTMLElement>document.getElementById("text")).style.display = "none";
     (<HTMLElement>document.getElementById("text_ueberschrift")).style.display = "none";
 }
 
 function figur(): void {
-    (<HTMLElement>document.getElementById("Streifen")).style.display = "none";
+    (<HTMLElement>document.getElementById("stripe")).style.display = "none";
     (<HTMLElement>document.getElementById("stripe_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Figuren")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("figur")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("figur_ueberschrift")).style.display = "inline-grid";
-    (<HTMLElement>document.getElementById("Schlider")).style.display = "none";
+    (<HTMLElement>document.getElementById("schild")).style.display = "none";
     (<HTMLElement>document.getElementById("schild_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Texte")).style.display = "none";
+    (<HTMLElement>document.getElementById("text")).style.display = "none";
     (<HTMLElement>document.getElementById("text_ueberschrift")).style.display = "none";
 }
 
 function schild(): void {
-    (<HTMLElement>document.getElementById("Streifen")).style.display = "none";
+    (<HTMLElement>document.getElementById("stripe")).style.display = "none";
     (<HTMLElement>document.getElementById("stripe_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Figuren")).style.display = "none";
+    (<HTMLElement>document.getElementById("figur")).style.display = "none";
     (<HTMLElement>document.getElementById("figur_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Schilder")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("schild")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("schild_ueberschrift")).style.display = "inline-grid";
-    (<HTMLElement>document.getElementById("Texte")).style.display = "none";
+    (<HTMLElement>document.getElementById("text")).style.display = "none";
     (<HTMLElement>document.getElementById("text_ueberschrift")).style.display = "none";
 }
 function text(): void {
-    (<HTMLElement>document.getElementById("Streifen")).style.display = "none";
+    (<HTMLElement>document.getElementById("stripe")).style.display = "none";
     (<HTMLElement>document.getElementById("stripe_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Figuren")).style.display = "none";
+    (<HTMLElement>document.getElementById("figur")).style.display = "none";
     (<HTMLElement>document.getElementById("figur_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Schilder")).style.display = "none";
+    (<HTMLElement>document.getElementById("schild")).style.display = "none";
     (<HTMLElement>document.getElementById("schild_ueberschrift")).style.display = "none";
-    (<HTMLElement>document.getElementById("Texte")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("text")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("text_ueberschrift")).style.display = "inline-grid";
 }
 
 function alles(): void {
-    (<HTMLElement>document.getElementById("Streifen")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("stripe")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("stripe_ueberschrift")).style.display = "inline-grid";
-    (<HTMLElement>document.getElementById("Figuren")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("figur")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("figur_ueberschrift")).style.display = "inline-grid";
-    (<HTMLElement>document.getElementById("Schilder")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("schild")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("schild_ueberschrift")).style.display = "inline-grid";
-    (<HTMLElement>document.getElementById("Texte")).style.display = "inline-grid";
+    (<HTMLElement>document.getElementById("text")).style.display = "inline-grid";
     (<HTMLElement>document.getElementById("text_ueberschrift")).style.display = "inline-grid";
 }
