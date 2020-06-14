@@ -1,0 +1,175 @@
+{
+    "produkte" : [
+        {
+                "name": "LED-Kaktus",
+                "bild": "Items/kaktus.jpg",
+                "beschreibung": "Ein grüner hell leuchtender LED-Kaktus! Eine Dekorative Bereicherung für alle Inneneinrichtungen.",
+                "farbe": "Grün",
+                "preis": 12.99,
+                "auflager": true,
+                "programmierbar": "",
+                "category": 1,
+                "wasserdicht": "",
+                "wifi": "",
+                "länge": "",
+                "smarthome": ""
+            },
+            {
+                "name": "LED-Flamingo",
+                "bild": "Items/Flamingo.jpg",
+                "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                "farbe": "Rosa",
+                "preis": 10.99,
+                "auflager": true,
+                "programmierbar": "",
+                "category": 1,
+                "wasserdicht": "",
+                "wifi": "",
+                "länge": "",
+                "smarthome": ""
+            
+            
+            },{
+            "name": "LED-Flamingo",
+            "bild": "Items/Flamingo.jpg",
+            "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+            "farbe": "Rosa",
+            "preis": 10.99,
+            "auflager": true,
+            "programmierbar": "",
+            "category": 1,
+            "wasserdicht": "",
+            "wifi": "",
+            "länge": "",
+            "smarthome": ""
+            
+                
+            },{
+                "name": "LED-Flamingo",
+                "bild": "Items/Flamingo.jpg",
+                "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                "farbe": "Rosa",
+                "preis": 10.99,
+                "auflager": true,
+                "programmierbar": "",
+                "category": 1,
+                "wasserdicht": "",
+                "wifi": "",
+                "länge": "",
+                "smarthome": ""
+            
+                },{
+                    "name": "LED-Flamingo",
+                    "bild": "Items/Flamingo.jpg",
+                    "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                    "farbe": "Rosa",
+                    "preis": 10.99,
+                    "auflager": true,
+                    "programmierbar": "",
+                    "category": 1,
+                    "wasserdicht": "",
+                    "wifi": "",
+                    "länge": "",
+                    "smarthome": ""
+            
+            
+            
+            
+
+
+
+
+
+            
+            },{
+                "name": "LED-Flamingo",
+                "bild": "Items/Flamingo.jpg",
+                "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                "farbe": "Rosa",
+                "preis": 10.99,
+                "auflager": true,
+                "programmierbar": "",
+                "category": 1,
+                "wasserdicht": "",
+                "wifi": "",
+                "länge": "",
+                "smarthome": ""
+            
+            
+            },{
+            "name": "LED-Flamingo",
+            "bild": "Items/Flamingo.jpg",
+            "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+            "farbe": "Rosa",
+            "preis": 10.99,
+            "auflager": true,
+            "programmierbar": "",
+            "category": 1,
+            "wasserdicht": "",
+            "wifi": "",
+            "länge": "",
+            "smarthome": ""
+
+
+            },{
+                "name": "LED-Flamingo",
+                "bild": "Items/Flamingo.jpg",
+                "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                "farbe": "Rosa",
+                "preis": 10.99,
+                "auflager": true,
+                "programmierbar": "",
+                "category": 1,
+                "wasserdicht": "",
+                "wifi": "",
+                "länge": "",
+                "smarthome": ""
+            
+            
+                    
+            },{
+                "name": "LED-Flamingo",
+                "bild": "Items/Flamingo.jpg",
+                "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                "farbe": "Rosa",
+                "preis": 10.99,
+                "auflager": true,
+                "programmierbar": "",
+                "category": 1,
+                "wasserdicht": "",
+                "wifi": "",
+                "länge": "",
+                "smarthome": ""
+            
+                },{
+                    "name": "LED-Flamingo",
+                    "bild": "Items/Flamingo.jpg",
+                    "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                    "farbe": "Rosa",
+                    "preis": 10.99,
+                    "auflager": true,
+                    "programmierbar": "",
+                    "category": 1,
+                    "wasserdicht": "",
+                    "wifi": "",
+                    "länge": "",
+                    "smarthome": ""
+                
+            
+                    },{
+                        "name": "LED-Flamingo",
+                        "bild": "Items/Flamingo.jpg",
+                        "beschreibung": "Eine rosa leuchtende prächtige LED-Flamingofigur",
+                        "farbe": "Rosa",
+                        "preis": 10.99,
+                        "auflager": true,
+                        "programmierbar": "",
+                        "category": 1,
+                        "wasserdicht": "",
+                        "wifi": "",
+                        "länge": "",
+                        "smarthome": ""
+                    
+                    }
+    ]
+}
