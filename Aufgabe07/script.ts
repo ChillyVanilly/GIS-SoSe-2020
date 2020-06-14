@@ -22,8 +22,8 @@ namespace Aufgabe07 {
             localStorage.clear();
             location.reload();
             priceAll = 0;
-            localStorage.removeItem("Summe");
-            localStorage.setItem("Summe", priceAll.toString());
+            localStorage.removeItem("gesamtPreis");
+            localStorage.setItem("gesamtPreis", priceAll.toString());
             artikelZaehler = 0;
             localStorage.removeItem("artikelCount");
             localStorage.setItem("artikelCount", artikelZaehler.toString());
