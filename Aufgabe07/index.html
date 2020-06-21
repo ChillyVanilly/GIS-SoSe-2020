@@ -1,92 +1,31 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <title>Online Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="tsInterface.js" defer></script>
+    <script src="scriptdata.js"></script>
+    <title>LED-Shop</title>
 </head>
-
 <body>
-    <a id= "Cart-Home" href="https://chillyvanilly.github.io/GiS-SoSe_2020-GoodVibes/Aufgabe07/shop.html">
-        <h>LED-Shop</h>
-    </a>
-
-    <div class="Leiste1">
-        <div id= box1></div>
-
-        <div class="navigatorrechts">
-            <label for="suche"></label>
-            <input type="search" id="suche" placeholder="Artikelsuche...">
-        </div>
-        
-        <div class="navigatorlinks">
-            <p>Dein zuverlässigster LED-Shop</p>
-        </div>
-    </div>
-
-    <div class="Leiste">
-        <div id= box></div>
-        <img id="logo" src="Logo.png" alt="Logo">
-        <div id ="warencounter"></div>
-        <a href=""><img id="warenkorb" src="Wagen.png" alt="Warenkorb"></a>
-        <a href="" id="home1"><img id="home" src="Home.png" alt="Home"></a>   
-            
-        <div id="menue">
-            <img src="Menu.png" alt="Menü">
-                
-            <div class="inhalt">
-                <a id ="LStreifen" href="#streifen">Streifen</a>
-                <a id ="LFiguren" href="#figuren">Figuren</a>
-                <a id ="LSchilder" href="#schilder">Schilder</a>
-                <a id ="LTexte" href="#texte">Texte</a>
+    <div class="box">
+        <header>
+            <div class="wrapper">
+                <div class="oben">
+                    <a href="#"></a>
+                </div>
+                <nav>
+                    <a id="allButton"></a>
+                    <a id="texte"></a>
+                    <a id="schilder"></a>
+                    <a id="figuren"></a>
+                    <a id="streifen"></a>
+                    <div id="warencounter"></div>
+                    <a href="trolley.html"></a>
+                    <input id="search" type="text" placeholder="Suche. . .">
+                </nav>
             </div>
-         </div>
-
-    </div>
-        
-<main>
-    <div id= "Price-Delete">
-
-    </div>
-    <div id="flex-cart" class="flex-container">
-
-    </div>
-</main>
-<div class="container_ueberschrift" id= "stripe_ueberschrift">
-    <div>
-        <h1 id="streifen">Streifen</h1>
-    </div>
-</div>
-
-<div class="container" id="Stripe"></div>
-
-<div class="container_ueberschrift" id="figur_ueberschrift">
-    <div>
-        <h1 id="figuren">Figuren</h1>
-    </div>
-</div>
-
-<div class="container" id="Figur"></div>
-
-<div class="container_ueberschrift" id="schild_ueberschrift">
-    <div>
-        <h1 id="schilder">Schilder</h1>
-    </div>
-</div>
-
-<div class="container" id="Schild"></div>
-
-<div class="container_ueberschrift" id="text_ueberschrift">
-    <div>
-        <h1 id="texte">Texte</h1>
-    </div>
-</div>
-
-<div class="container" id="Text"></div>
-
-
-
-
+        </header>
 </body>
 </html>
