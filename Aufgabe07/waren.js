@@ -87,4 +87,4 @@ var Aufgabe07;
         }
     }
 })(Aufgabe07 || (Aufgabe07 = {}));
-//# sourceMappingURL=trolley.js.map
+//# sourceMappingURL=waren.js.map
