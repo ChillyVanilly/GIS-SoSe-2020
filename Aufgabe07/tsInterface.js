@@ -5,29 +5,25 @@ var Aufgabe07;
     function createArtikel() {
         for (let i = 0; i < Aufgabe07.artikel.length; i++) {
             if (Aufgabe07.artikel[i].category == 1) {
-                let newDiv;
-                 == document.createElement("div");
+                let newDiv = document.createElement("div");
                 newDiv.id = "div" + i;
                 document.getElementById("flex1")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
             if (Aufgabe07.artikel[i].category == 2) {
-                let newDiv;
-                 == document.createElement("div");
+                let newDiv = document.createElement("div");
                 newDiv.id = "div" + i;
                 document.getElementById("flex2")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
             if (Aufgabe07.artikel[i].category == 3) {
-                let newDiv;
-                 == document.createElement("div");
+                let newDiv = document.createElement("div");
                 newDiv.id = "div" + i;
-                document.getElementById("flex3")?.appendChild(newDiv);
+                document.getElementById("flex1+3")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
             if (Aufgabe07.artikel[i].category == 4) {
-                let newDiv;
-                 == document.createElement("div");
+                let newDiv = document.createElement("div");
                 newDiv.id = "div" + i;
                 document.getElementById("flex4")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());

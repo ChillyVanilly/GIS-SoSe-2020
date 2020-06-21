@@ -5,29 +5,38 @@ namespace Aufgabe07 {
         for (let i: number = 0; i < artikel.length; i++) {
 
             if (artikel[i].category == 1) {
-                let newDiv: HTMLDivElement == document.createElement("div");
+                let newDiv: HTMLDivElement = document.createElement("div");
                 newDiv.id = "div" + i;
                 document.getElementById("flex1")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
+
+            
             if (artikel[i].category == 2) {
-                let newDiv: HTMLDivElement == document.createElement("div");
+                let newDiv: HTMLDivElement = document.createElement("div");
                 newDiv.id = "div" + i;
                 document.getElementById("flex2")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
+
+            
             if (artikel[i].category == 3) {
-                let newDiv: HTMLDivElement == document.createElement("div");
+                let newDiv: HTMLDivElement = document.createElement("div");
                 newDiv.id = "div" + i;
-                document.getElementById("flex3")?.appendChild(newDiv);
+                document.getElementById("flex1+3")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
+
+            
             if (artikel[i].category == 4) {
-                let newDiv: HTMLDivElement == document.createElement("div");
+                let newDiv: HTMLDivElement = document.createElement("div");
                 newDiv.id = "div" + i;
                 document.getElementById("flex4")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
+
+            
+            
 
             //Bild
             let imgElement: HTMLImageElement = document.createElement("img");
@@ -183,7 +192,8 @@ namespace Aufgabe07 {
             (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
             (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
             (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "block";
-    }
+        }
 
+    }
 }
 
