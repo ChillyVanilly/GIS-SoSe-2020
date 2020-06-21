@@ -277,63 +277,6 @@ img[alt=Warenkorb]{
         opacity: 0.7;
     }
 
-.container_ueberschrift{
-    display: grid;
-    justify-content: center;
-    grid-gap: 30px 5px;
-}
-
-.container_ueberschrift div{
-    background-color: rgba(187, 187, 187, 0.9);
-    width: 925px;
-    height: 80px;
-    /*padding: 10px 10px 10px 10px; */
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    margin-left: 20px;
-    margin-top: 100px;
-}
-
-.container{
-    display: grid;
-    grid-gap: 10px 10px;
-    justify-content: center;
-    grid-template-columns: repeat(4, 210px);
-    width: 100%;
-    
-}
-
-.container img{
-    height: 200px ;
-}
-
-.container div{
-    display:block;
-    justify-content:center;
-    grid-template-columns:1fr;
-    background-color: rgba(187, 187, 187, 0.9);
-    width: 210px;
-    height: 100%;
-    /*padding: 10px 10px 10px 10px;*/
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: 20px;
-}
-
-.container div:hover{
-    background-color: white;
-}
-
-.container p{
-    font-size:12px;
-}
-.container h1{
-    font-size: x-large;
-    font-style: oblique;
-}
-
-
 button {
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);;
