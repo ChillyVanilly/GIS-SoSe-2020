@@ -56,7 +56,7 @@ namespace Aufgabe07 {
 
         //wasserdicht
         let wasserdicht: HTMLParagraphElement = document.createElement("p");
-        wasserdicht.innerHTML = localStorage.getItem("artikel_wassereicht" + index)!;
+        wasserdicht.innerHTML = localStorage.getItem("artikel_wasserdicht" + index)!;
         newDiv.appendChild(wasserdicht);
         console.log(wasserdicht);
 

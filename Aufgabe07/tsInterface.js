@@ -101,6 +101,11 @@ var Aufgabe07;
         localStorage.setItem("artikel_name" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].name);
         localStorage.setItem("artikel_beschreibung" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].beschreibung);
         localStorage.setItem("artikel_farbe" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].farbe);
+        localStorage.setItem("artikel_länge" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].länge);
+        localStorage.setItem("artikel_programmierbar" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].programmierbar);
+        localStorage.setItem("artikel_wasserdicht" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].wasserdicht);
+        localStorage.setItem("artikel_wifi" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].wifi);
+        localStorage.setItem("artikel_smarthome" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].smarthome);
         localStorage.setItem("artikel_preis" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].preis.toString());
         localStorage.setItem("anzahlArtikel", cartArtikel.length.toString());
     }
