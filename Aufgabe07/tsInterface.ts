@@ -91,7 +91,7 @@ namespace Aufgabe07 {
             //Kaufen
             let kaufen: HTMLButtonElement = document.createElement("button");
             kaufen.innerHTML = "Buy";
-            kaufen.addEventListener("click", handleTrolley);
+            kaufen.addEventListener("click", handleWaren);
             document.getElementById("div" + i)?.appendChild(kaufen);
             kaufen.setAttribute("preis", artikel[i].preis.toString());
 
@@ -106,7 +106,7 @@ namespace Aufgabe07 {
 
     let cartArtikel: Artikel[] = [];
 
-    export function handleTrolley(_event: Event): void {
+    export function handleWaren(_event: Event): void {
 
         if (artikelCounter >= 0) {
             document.getElementById("warencounter")?.appendChild(blasenDiv);

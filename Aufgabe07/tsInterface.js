@@ -71,7 +71,7 @@ var Aufgabe07;
             //Kaufen
             let kaufen = document.createElement("button");
             kaufen.innerHTML = "Buy";
-            kaufen.addEventListener("click", handleTrolley);
+            kaufen.addEventListener("click", handleWaren);
             document.getElementById("div" + i)?.appendChild(kaufen);
             kaufen.setAttribute("preis", Aufgabe07.artikel[i].preis.toString());
         }
@@ -83,7 +83,7 @@ var Aufgabe07;
     let artikelCounter = 0;
     let blasenDiv = document.createElement("div");
     let cartArtikel = [];
-    function handleTrolley(_event) {
+    function handleWaren(_event) {
         if (artikelCounter >= 0) {
             document.getElementById("warencounter")?.appendChild(blasenDiv);
         }
@@ -109,7 +109,7 @@ var Aufgabe07;
         localStorage.setItem("artikel_preis" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].preis.toString());
         localStorage.setItem("anzahlArtikel", cartArtikel.length.toString());
     }
-    Aufgabe07.handleTrolley = handleTrolley;
+    Aufgabe07.handleWaren = handleWaren;
     let allCategory = document.createElement("a");
     allCategory.id = "all";
     allCategory.innerHTML = "All";
