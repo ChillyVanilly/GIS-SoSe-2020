@@ -26,6 +26,37 @@ body {
     height: 30px;
     width: 100%;
 }
+#warenkorbWert>p{
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+}
+#delButton{
+    float: right;
+    margin-right: 30px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 80px;
+    height: 1500px;
+}
+.content-area h2{
+    font-family: monospace;
+    letter-spacing: 4px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    margin: 0; 
+    margin-left: 10px;
+}
+.content-area p{
+    padding: 2% 0;
+    font-family: merienda;
+    line-height: 30px;
+}
 
 .Leiste1 > .navigatorrechts{
     display: inline;
