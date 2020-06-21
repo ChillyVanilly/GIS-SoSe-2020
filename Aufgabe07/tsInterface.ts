@@ -23,7 +23,7 @@ namespace Aufgabe07 {
             if (artikel[i].category == 3) {
                 let newDiv: HTMLDivElement = document.createElement("div");
                 newDiv.id = "div" + i;
-                document.getElementById("flex1+3")?.appendChild(newDiv);
+                document.getElementById("flex3")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
 

@@ -19,7 +19,7 @@ var Aufgabe07;
             if (Aufgabe07.artikel[i].category == 3) {
                 let newDiv = document.createElement("div");
                 newDiv.id = "div" + i;
-                document.getElementById("flex1+3")?.appendChild(newDiv);
+                document.getElementById("flex3")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
             if (Aufgabe07.artikel[i].category == 4) {
