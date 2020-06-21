@@ -11,33 +11,46 @@
 </head>
 
 <body>
-    <div class="box-area">
-        <header>
-            <div class="wrapper">
-                <div class="top">
-                    <a href="#"><img src="Logo.png" alt="Logo"></a>
-                </div>
-                <nav>
-                        <a id="allButton"></a>
-                        <a id="figurButton"></a>
-                        <a id="textButton"></a>
-                        <a id="schildButton"></a>
-                        <a id="streifenButton"></a>
-                        <div id="warencounter"></div>
-                    <a href="waren.html"><img src="Wagen.png" alt="waren_icon"></a>
-                    <input id="search" type="text" placeholder="Suche...">
-                </nav>
+    <div class="Leiste1">
+        <div id=box1></div>
+
+        <div class="navigatorrechts">
+            <label for="suche"></label>
+            <input type="search" id="suche" placeholder="Artikelsuche...">
+        </div>
+
+        <div class="navigatorlinks">
+            <p>Dein zuverlässigster LED-Shop</p>
+        </div>
+    </div>
+
+    <div class="Leiste">
+        <div id=box></div>
+        <img id="logo" src="Logo.png" alt="Logo">
+        <div id="warencounter"></div>
+        <a href="waren.html"><img id="warenkorb" src="Wagen.png" alt="Warenkorb"></a>
+        <a href="index.html" id="home1"><img id="home" src="Home.png" alt="Home"></a>
+
+        <div id="menue">
+            <img src="Menu.png" alt="Menü">
+
+            <div class="inhalt">
+                <a id="allButton"></a>
+                <a id="figurButton"></a>
+                <a id="textButton"></a>
+                <a id="schildButton"></a>
             </div>
-        </header>
-        <main>
-            <div class="content-area">
-                <div id="figurBlock" class="kategorie1"></div>
-                <h2>Figuren</h2>
-                <div id="flex1" class="products"></div>
-            </div>
-            <div id="textBlock" class="kategorie2"></div>
-            <h2>Texte</h2>
-            <div id="flex2" class="products"></div>
+        </div>
+
+    </div>
+    <div class="content-area">
+        <div id="figurBlock" class="kategorie1"></div>
+        <h2>Figuren</h2>
+        <div id="flex1" class="products"></div>
+    </div>
+    <div id="textBlock" class="kategorie2"></div>
+    <h2>Texte</h2>
+    <div id="flex2" class="products"></div>
     </div>
     <div id="schildBlock" class="kategorie3"></div>
     <h2>Schilder</h2>
@@ -48,10 +61,7 @@
     <div id="flex4" class="products"></div>
     </div>
     </div>
-
-    </main>
-</body>
-</div>
+    </div>
 </body>
 
 </html>
