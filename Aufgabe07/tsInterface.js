@@ -65,9 +65,9 @@ var Aufgabe07;
             smarthome.innerHTML = Aufgabe07.artikel[i].smarthome;
             document.getElementById("div" + i)?.appendChild(smarthome);
             //Preis
-            let preis = document.createElement("h2");
-            preis.innerHTML = Aufgabe07.artikel[i].preis + "€";
-            document.getElementById("div" + i)?.appendChild(preis);
+            let price = document.createElement("h2");
+            price.innerHTML = Aufgabe07.artikel[i].preis + "€";
+            document.getElementById("div" + i)?.appendChild(price);
             //Kaufen
             let kaufen = document.createElement("button");
             kaufen.innerHTML = "Buy";

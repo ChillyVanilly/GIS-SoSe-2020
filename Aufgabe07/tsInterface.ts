@@ -84,9 +84,9 @@ namespace Aufgabe07 {
             document.getElementById("div" + i)?.appendChild(smarthome);
 
             //Preis
-            let preis: HTMLElement = document.createElement("h2");
-            preis.innerHTML = artikel[i].preis + "€";
-            document.getElementById("div" + i)?.appendChild(preis);
+            let price: HTMLElement = document.createElement("h2");
+            price.innerHTML = artikel[i].preis + "€";
+            document.getElementById("div" + i)?.appendChild(price);
 
             //Kaufen
             let kaufen: HTMLButtonElement = document.createElement("button");

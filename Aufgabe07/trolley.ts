@@ -30,12 +30,48 @@ namespace Aufgabe07 {
         newDiv.appendChild(beschreibung);
         console.log(beschreibung);
 
+        //Farbe
+        let farbe: HTMLParagraphElement = document.createElement("p");
+        farbe.innerHTML = localStorage.getItem("artikel_farbe" + index)!;
+        newDiv.appendChild(farbe);
+        console.log(farbe);
+
+        //Länge
+        let länge: HTMLParagraphElement = document.createElement("p");
+        länge.innerHTML = localStorage.getItem("artikel_länge" + index)!;
+        newDiv.appendChild(länge);
+        console.log(länge);
+
+        //Wifi
+        let wifi: HTMLParagraphElement = document.createElement("p");
+        wifi.innerHTML = localStorage.getItem("artikel_wifi" + index)!;
+        newDiv.appendChild(wifi);
+        console.log(wifi);
+
+        //programmierbar
+        let programmierbar: HTMLParagraphElement = document.createElement("p");
+        programmierbar.innerHTML = localStorage.getItem("artikel_programmierbar" + index)!;
+        newDiv.appendChild(programmierbar);
+        console.log(programmierbar);
+
+        //wasserdicht
+        let wasserdicht: HTMLParagraphElement = document.createElement("p");
+        wasserdicht.innerHTML = localStorage.getItem("artikel_wassereicht" + index)!;
+        newDiv.appendChild(wasserdicht);
+        console.log(wasserdicht);
+
+        //smarthome
+        let smarthome: HTMLParagraphElement = document.createElement("p");
+        smarthome.innerHTML = localStorage.getItem("artikel_smarthome" + index)!;
+        newDiv.appendChild(smarthome);
+        console.log(smarthome);
+
         //Preis
-        let preis: HTMLParagraphElement = document.createElement("h2");
-        preis.innerHTML = localStorage.getItem("artikel_preis" + index) + "€"!;
-        newDiv.setAttribute("preis", preis.innerHTML);
-        newDiv.appendChild(preis);
-        console.log(preis);
+        let price: HTMLParagraphElement = document.createElement("h2");
+        price.innerHTML = localStorage.getItem("artikel_preis" + index) + "€"!;
+        newDiv.setAttribute("preis", price.innerHTML);
+        newDiv.appendChild(price);
+        console.log(price);
 
         //Button
         let kaufen: HTMLButtonElement = document.createElement("button");
@@ -43,10 +79,11 @@ namespace Aufgabe07 {
         newDiv.appendChild(kaufen);
         kaufen.addEventListener("click", handleDelete);
 
-        //Gesamtpreis
-        preis = preis + parseFloat(preis.innerHTML);
-        gesamtpreis.innerHTML = "Gesamtpreis: " + preis.toFixed(0) + "€";
+        //Preisgesamt
+        preis = preis + parseFloat(price.innerHTML);
+        gesamtpreis.innerHTML = "Gesamtpreis: " +  preis.toFixed(0) + "€";
         document.getElementById("warenkorbWert")?.appendChild(gesamtpreis);
+
     }
     let delButton: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("delButton"));
     delButton.addEventListener("click", handleDeleteAll);
