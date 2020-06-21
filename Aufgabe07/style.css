@@ -28,8 +28,7 @@ body {
 }
 #warenkorbWert>p{
     float: right;
-    margin-right: 30px;
-    margin-top: 0px;
+    margin-top: 400px;
 }
 #delButton{
     float: right;
@@ -336,37 +335,8 @@ button {
         top: 70px; 
         width:75px;
     }
-    
-    
-    .container_ueberschrift div{
-        height: 70px;
-        width: 600px;
-        margin-top: 70px;
-        margin-left: 20px;
-    }
 
-    .container{
-        grid-template-columns: repeat(3, 180px);
-        width: 100%;        
-    }
 
-    .container div{
-        grid-template-columns:1fr;
-        width: 180px;
-    }
-
-    h1{
-        font-size: 27px;
-    }
-    
-    .container img {
-        height: 150px ;
-    }
-  
-    .container p{
-        font-size:12px;
-    }
-}
 
     @media screen and (max-width:600px){
         
@@ -432,38 +402,5 @@ button {
     h1{
         font-size:22px;
     }
-    
-    .container_ueberschrift div{
-        margin-left: 15px;
-        width: 440px;
-        height: 50px;
-        padding: 5px 5px 5px 5px; 
-        margin-top: 50px;
-        border-radius: 15px;
     }
-
-    .container{
-        grid-template-columns: repeat(2, 200px);
-        width: 100%;        
-    }
-
-    .container div{
-        grid-template-columns:1fr;
-        width: 200px;
-    }
-   
-
-    
-    .container img {
-        height: 150px ;
-    }
-
-    .container .Produkt{
-        width:  210px;
-    }
-    
-    .container p{
-        font-size:12px;
-    }
-        
-    }
+}
