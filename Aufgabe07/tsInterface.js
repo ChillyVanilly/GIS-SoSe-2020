@@ -81,5 +81,90 @@ var Aufgabe07;
         }
     }
     Aufgabe07.createArtikel = createArtikel;
+    //Warenkorb
+    let summe = 0;
+    let count = 0;
+    let artikelCounter = 0;
+    let blasenDiv = document.createElement("div");
+    let cartArtikel = [];
+    function handleTrolley(_event) {
+        if (artikelCounter >= 0) {
+            document.getElementById("warencounter")?.appendChild(blasenDiv);
+        }
+        artikelCounter++;
+        blasenDiv.innerHTML = artikelCounter + "";
+        if (_event.currentTarget?.getAttribute("preis")) {
+            summe = count + parseFloat(_event.currentTarget?.getAttribute("preis"));
+            count = summe;
+        }
+        console.log(summe.toFixed(0));
+        let indexButton = _event.currentTarget.parentElement.getAttribute("index");
+        let indexNr = parseInt(indexButton);
+        cartArtikel.push(Aufgabe07.artikel[indexNr]);
+        localStorage.setItem("artikel_bild" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].bild);
+        localStorage.setItem("artikel_name" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].name);
+        localStorage.setItem("artikel_beschreibung" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].beschreibung);
+        localStorage.setItem("artikel_farbe" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].farbe);
+        localStorage.setItem("artikel_preis" + (cartArtikel.length - 1), Aufgabe07.artikel[indexNr].preis.toString());
+        localStorage.setItem("anzahlArtikel", cartArtikel.length.toString());
+    }
+    Aufgabe07.handleTrolley = handleTrolley;
+    let allCategory = document.createElement("a");
+    allCategory.id = "all";
+    allCategory.innerHTML = "All";
+    allCategory.addEventListener("click", handleKategorie);
+    document.getElementById("allButton")?.appendChild(allCategory);
+    let figurCategory = document.createElement("a");
+    figurCategory.id = "figur";
+    figurCategory.innerHTML = "Figur";
+    figurCategory.addEventListener("click", handleKategorie);
+    document.getElementById("figurButton")?.appendChild(figurCategory);
+    let textCategory = document.createElement("a");
+    textCategory.id = "text";
+    textCategory.innerHTML = "Text";
+    textCategory.addEventListener("click", handleKategorie);
+    document.getElementById("textButton")?.appendChild(textCategory);
+    let schildCategory = document.createElement("a");
+    schildCategory.id = "schild";
+    schildCategory.innerHTML = "Schild";
+    schildCategory.addEventListener("click", handleKategorie);
+    document.getElementById("schildButton")?.appendChild(schildCategory);
+    let streifenCategory = document.createElement("a");
+    streifenCategory.id = "streifen";
+    streifenCategory.innerHTML = "Streifen";
+    streifenCategory.addEventListener("click", handleKategorie);
+    document.getElementById("streifenButton")?.appendChild(streifenCategory);
+    function handleKategorie(_event) {
+        if (_event.currentTarget.getAttribute("id") == "all") {
+            document.getElementById("textBlock").style.display = "block";
+            document.getElementById("figurBlock").style.display = "block";
+            document.getElementById("schildBlock").style.display = "block";
+            document.getElementById("streifenBlock").style.display = "block";
+        }
+        else if (_event.currentTarget.getAttribute("id") == "figur") {
+            document.getElementById("textBlock").style.display = "none";
+            document.getElementById("figurBlock").style.display = "block";
+            document.getElementById("schildBlock").style.display = "none";
+            document.getElementById("streifenBlock").style.display = "none";
+        }
+        else if (_event.currentTarget.getAttribute("id") == "text") {
+            document.getElementById("textBlock").style.display = "block";
+            document.getElementById("figurBlock").style.display = "none";
+            document.getElementById("schildBlock").style.display = "none";
+            document.getElementById("streifenBlock").style.display = "none";
+        }
+        else if (_event.currentTarget.getAttribute("id") == "schild") {
+            document.getElementById("textBlock").style.display = "none";
+            document.getElementById("figurBlock").style.display = "none";
+            document.getElementById("schildBlock").style.display = "block";
+            document.getElementById("streifenBlock").style.display = "none";
+        }
+        else if (_event.currentTarget.getAttribute("id") == "streifen") {
+            document.getElementById("textBlock").style.display = "none";
+            document.getElementById("figurBlock").style.display = "none";
+            document.getElementById("schildBlock").style.display = "none";
+            document.getElementById("streifenBlock").style.display = "block";
+        }
+    }
 })(Aufgabe07 || (Aufgabe07 = {}));
 //# sourceMappingURL=tsInterface.js.map

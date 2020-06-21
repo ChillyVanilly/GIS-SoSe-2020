@@ -88,4 +88,102 @@ namespace Aufgabe07 {
 
         }
     }
+
+    //Warenkorb
+    let summe: number = 0;
+    let count: number = 0;
+    let artikelCounter: number = 0;
+    let blasenDiv: HTMLDivElement = document.createElement("div");
+
+    let cartArtikel: Artikel[] = [];
+
+    export function handleTrolley(_event: Event): void {
+
+        if (artikelCounter >= 0) {
+            document.getElementById("warencounter")?.appendChild(blasenDiv);
+        }
+        artikelCounter++;
+        blasenDiv.innerHTML = artikelCounter + "";
+
+        if ((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")) {
+            summe = count + parseFloat((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
+            count = summe;
+        }
+        console.log(summe.toFixed(0));
+
+        let indexButton: string = (<HTMLDivElement>(<HTMLElement>_event.currentTarget).parentElement).getAttribute("index")!;
+        let indexNr: number = parseInt(indexButton);
+
+        cartArtikel.push(artikel[indexNr]);
+        localStorage.setItem("artikel_bild" + (cartArtikel.length - 1), artikel[indexNr].bild);
+        localStorage.setItem("artikel_name" + (cartArtikel.length - 1), artikel[indexNr].name);
+        localStorage.setItem("artikel_beschreibung" + (cartArtikel.length - 1), artikel[indexNr].beschreibung);
+        localStorage.setItem("artikel_farbe" + (cartArtikel.length - 1), artikel[indexNr].farbe);
+        localStorage.setItem("artikel_preis" + (cartArtikel.length - 1), artikel[indexNr].preis.toString());
+        localStorage.setItem("anzahlArtikel", cartArtikel.length.toString());
+
+
+    }
+
+    let allCategory: HTMLAnchorElement = document.createElement("a");
+    allCategory.id = "all";
+    allCategory.innerHTML = "All";
+    allCategory.addEventListener("click", handleKategorie);
+    document.getElementById("allButton")?.appendChild(allCategory);
+
+    let figurCategory: HTMLAnchorElement = document.createElement("a");
+    figurCategory.id = "figur";
+    figurCategory.innerHTML = "Figur";
+    figurCategory.addEventListener("click", handleKategorie);
+    document.getElementById("figurButton")?.appendChild(figurCategory);
+
+    let textCategory: HTMLAnchorElement = document.createElement("a");
+    textCategory.id = "text";
+    textCategory.innerHTML = "Text";
+    textCategory.addEventListener("click", handleKategorie);
+    document.getElementById("textButton")?.appendChild(textCategory);
+
+    let schildCategory: HTMLAnchorElement = document.createElement("a");
+    schildCategory.id = "schild";
+    schildCategory.innerHTML = "Schild";
+    schildCategory.addEventListener("click", handleKategorie);
+    document.getElementById("schildButton")?.appendChild(schildCategory);
+
+    let streifenCategory: HTMLAnchorElement = document.createElement("a");
+    streifenCategory.id = "streifen";
+    streifenCategory.innerHTML = "Streifen";
+    streifenCategory.addEventListener("click", handleKategorie);
+    document.getElementById("streifenButton")?.appendChild(streifenCategory);
+
+
+    function handleKategorie(_event: Event): void {
+
+        if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "all") {
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "block";
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "figur") {
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "none";
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "text") {
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "none";
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "schild") {
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "none";
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "streifen") {
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "block";
+    }
+
 }
+
