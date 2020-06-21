@@ -1,7 +1,7 @@
 namespace Aufgabe07 {
     //Interface
 
-    export function createArtikel(): void {
+    export function createLEDS(): void {
         for (let i: number = 0; i < artikel.length; i++) {
 
             if (artikel[i].category == 1) {

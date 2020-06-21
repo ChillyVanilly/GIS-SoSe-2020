@@ -2,7 +2,7 @@
 var Aufgabe07;
 (function (Aufgabe07) {
     //Interface
-    function createArtikel() {
+    function createLEDS() {
         for (let i = 0; i < Aufgabe07.artikel.length; i++) {
             if (Aufgabe07.artikel[i].category == 1) {
                 let newDiv = document.createElement("div");
@@ -76,7 +76,7 @@ var Aufgabe07;
             kaufen.setAttribute("preis", Aufgabe07.artikel[i].preis.toString());
         }
     }
-    Aufgabe07.createArtikel = createArtikel;
+    Aufgabe07.createLEDS = createLEDS;
     //Warenkorb
     let summe = 0;
     let count = 0;

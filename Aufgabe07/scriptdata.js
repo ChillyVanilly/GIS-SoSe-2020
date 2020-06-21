@@ -6,7 +6,7 @@ var Aufgabe07;
         let response = await fetch(_url);
         let jsonArray = await response.json();
         Aufgabe07.artikel = await JSON.parse(JSON.stringify(jsonArray));
-        Aufgabe07.createArtikel();
+        Aufgabe07.createLEDS();
     }
 })(Aufgabe07 || (Aufgabe07 = {}));
 //# sourceMappingURL=scriptdata.js.map

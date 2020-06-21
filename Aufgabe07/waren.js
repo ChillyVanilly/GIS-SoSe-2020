@@ -76,13 +76,13 @@ var Aufgabe07;
     function handleDelete(_event) {
         let preisString = _event.currentTarget.parentElement.getAttribute("preis");
         preis = preis - parseFloat(preisString);
-        gesamtpreis.innerHTML = "Gesamtpreis: " + preis.toFixed(0) + "€";
+        gesamtpreis.innerHTML = "Gesamt: " + preis.toFixed(0) + "€";
         (_event.currentTarget.parentElement).remove();
     }
     function handleDeleteAll(_event) {
         for (let index = 0; index <= lenght; index++) {
             document.getElementById("div" + index).remove();
-            gesamtpreis.innerHTML = "Gesamtpreis: " + 0 + "€";
+            gesamtpreis.innerHTML = "Gesamt: " + 0 + "€";
             localStorage.clear();
         }
     }

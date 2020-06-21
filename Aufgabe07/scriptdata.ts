@@ -20,6 +20,6 @@ namespace Aufgabe07 {
         let response: Response = await fetch(_url);
         let jsonArray: JSON = await response.json();
         artikel = await JSON.parse(JSON.stringify(jsonArray));
-        createArtikel();
+        createLEDS();
     }
 }

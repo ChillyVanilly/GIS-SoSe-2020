@@ -91,14 +91,14 @@ namespace Aufgabe07 {
     function handleDelete(_event: Event): void {
         let preisString: string = (<HTMLParagraphElement>(<HTMLElement>_event.currentTarget).parentElement).getAttribute("preis")!;
         preis = preis - parseFloat(preisString);
-        gesamtpreis.innerHTML = "Gesamtpreis: " + preis.toFixed(0) + "€";
+        gesamtpreis.innerHTML = "Gesamt: " + preis.toFixed(0) + "€";
         ((<HTMLDivElement>_event.currentTarget).parentElement!).remove();
     }
 
     function handleDeleteAll(_event: Event): void {
         for (let index: number = 0; index <= lenght; index++) {
             (<HTMLDivElement>document.getElementById("div" + index)).remove();
-            gesamtpreis.innerHTML = "Gesamtpreis: " + 0 + "€";
+            gesamtpreis.innerHTML = "Gesamt: " + 0 + "€";
             localStorage.clear();
         }
     }
