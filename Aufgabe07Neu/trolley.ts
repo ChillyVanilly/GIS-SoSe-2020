@@ -46,7 +46,7 @@ namespace Aufgabe07Neu {
 
         //Gesamtpreis berechnen
         preis = preis + parseFloat(price.innerHTML);
-        gesamtpreis.innerHTML = "Gesamtpreis: " + preis.toFixed(0) + "€";
+        gesamtpreis.innerHTML = "Gesamtwert: " + preis.toFixed(0) + "€";
         document.getElementById("warenkorbWert")?.appendChild(gesamtpreis);
     }
     let delButton: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("delButton"));
@@ -56,14 +56,14 @@ namespace Aufgabe07Neu {
     function handleDelete(_event: Event): void {
         let preisString: string = (<HTMLParagraphElement>(<HTMLElement>_event.currentTarget).parentElement).getAttribute("preis")!;
         preis = preis - parseFloat(preisString);
-        gesamtpreis.innerHTML = "Gesamtpreis: " + preis.toFixed(0) + "€";
+        gesamtpreis.innerHTML = "Gesamtwert: " + preis.toFixed(0) + "€";
         ((<HTMLDivElement>_event.currentTarget).parentElement!).remove();
     }
 
     function handleDeleteAll(_event: Event): void {
         for (let index: number = 0; index <= length; index++) {
             (<HTMLDivElement>document.getElementById("div" + index)).remove();
-            gesamtpreis.innerHTML = "Gesamtpreis: " + 0 + "€";
+            gesamtpreis.innerHTML = "Gesamtwert: " + 0 + "€";
             localStorage.clear();
         }
     }
