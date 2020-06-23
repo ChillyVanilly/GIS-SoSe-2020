@@ -11,7 +11,7 @@ var Aufgabe08;
         //Quer : Daten aus form Data als "ANY"
         let query = new URLSearchParams(formData);
         //url + query zusammen
-        url = url + "?" + query.toString();
+        //url = url + "?" + query.toString();
         //console.log("url: " + url);
         console.log(query.toString());
         //Antwort des Servers aus url+query
