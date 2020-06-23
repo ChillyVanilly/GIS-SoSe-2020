@@ -26,10 +26,10 @@ namespace Aufgabe07Neu {
         console.log(name);
 
         //BESCHREIBUNG
-        let description: HTMLParagraphElement = document.createElement("p");
-        description.innerHTML = localStorage.getItem("artikel_description" + index)!;
-        newDiv.appendChild(description);
-        console.log(description);
+        let beschreibung: HTMLParagraphElement = document.createElement("p");
+        beschreibung.innerHTML = localStorage.getItem("artikel_description" + index)!;
+        newDiv.appendChild(beschreibung);
+        console.log(beschreibung);
 
         //PREIS
         let price: HTMLParagraphElement = document.createElement("p");
@@ -40,7 +40,7 @@ namespace Aufgabe07Neu {
 
         //BUTTON
         let kaufen: HTMLButtonElement = document.createElement("button");
-        kaufen.innerHTML = "Löschen";
+        kaufen.innerHTML = "Aus dem Warenkorb entfernen";
         newDiv.appendChild(kaufen);
         kaufen.addEventListener("click", handleDelete);
 

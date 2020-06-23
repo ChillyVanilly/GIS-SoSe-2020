@@ -18,10 +18,23 @@ namespace Aufgabe07Neu {
                 document.getElementById("flex2")?.appendChild(newDiv);
                 newDiv.setAttribute("index", i.toString());
             }
+            if (artikel[i].category == 3) {
+                let newDiv: HTMLDivElement = document.createElement("div");
+                newDiv.id = "div" + i;
+                document.getElementById("flex3")?.appendChild(newDiv);
+                newDiv.setAttribute("index", i.toString());
+            }
+
+            if (artikel[i].category == 4) {
+                let newDiv: HTMLDivElement = document.createElement("div");
+                newDiv.id = "div" + i;
+                document.getElementById("flex4")?.appendChild(newDiv);
+                newDiv.setAttribute("index", i.toString());
+            }
 
             //IMG
             let imgElement: HTMLImageElement = document.createElement("img");
-            imgElement.src = artikel[i].img;
+            imgElement.src = artikel[i].bild;
             document.getElementById("div" + i)?.appendChild(imgElement);
 
             //NAME
@@ -30,9 +43,9 @@ namespace Aufgabe07Neu {
             document.getElementById("div" + i)?.appendChild(name);
 
             //DESCRIPTION
-            let description: HTMLParagraphElement = document.createElement("p");
-            description.innerHTML = artikel[i].description;
-            document.getElementById("div" + i)?.appendChild(description);
+            let beschreibung: HTMLParagraphElement = document.createElement("p");
+            beschreibung.innerHTML = artikel[i].beschreibung;
+            document.getElementById("div" + i)?.appendChild(beschreibung);
 
             //PREIS
             let price: HTMLElement = document.createElement("p");
@@ -41,7 +54,7 @@ namespace Aufgabe07Neu {
 
             //BUY
             let kaufen: HTMLButtonElement = document.createElement("button");
-            kaufen.innerHTML = "Buy";
+            kaufen.innerHTML = "In den Warenkorb";
             kaufen.addEventListener("click", handleTrolley);
             document.getElementById("div" + i)?.appendChild(kaufen);
             kaufen.setAttribute("preis", artikel[i].preis.toString());
@@ -75,9 +88,9 @@ namespace Aufgabe07Neu {
         let indexNr: number = parseInt(indexButton);
 
         cartArtikel.push(artikel[indexNr]);
-        localStorage.setItem("artikel_bild" + (cartArtikel.length - 1), artikel[indexNr].img);
+        localStorage.setItem("artikel_bild" + (cartArtikel.length - 1), artikel[indexNr].bild);
         localStorage.setItem("artikel_name" + (cartArtikel.length - 1), artikel[indexNr].name);
-        localStorage.setItem("artikel_description" + (cartArtikel.length - 1), artikel[indexNr].description);
+        localStorage.setItem("artikel_description" + (cartArtikel.length - 1), artikel[indexNr].beschreibung);
         localStorage.setItem("artikel_preis" + (cartArtikel.length - 1), artikel[indexNr].preis.toString());
         localStorage.setItem("anzahlArtikel", cartArtikel.length.toString());
 
@@ -86,34 +99,65 @@ namespace Aufgabe07Neu {
 
     let allCategory: HTMLAnchorElement = document.createElement("a");
     allCategory.id = "all";
-    allCategory.innerHTML = "All";
+    allCategory.innerHTML = "Alle Kategorien";
     allCategory.addEventListener("click", handleKategorie);
     document.getElementById("allButton")?.appendChild(allCategory);
 
     let menCategory: HTMLAnchorElement = document.createElement("a");
-    menCategory.id = "men";
-    menCategory.innerHTML = "Men";
+    menCategory.id = "figur";
+    menCategory.innerHTML = "Figuren";
     menCategory.addEventListener("click", handleKategorie);
-    document.getElementById("menButton")?.appendChild(menCategory);
+    document.getElementById("figurButton")?.appendChild(menCategory);
 
     let womenCategory: HTMLAnchorElement = document.createElement("a");
-    womenCategory.id = "women";
-    womenCategory.innerHTML = "Women";
+    womenCategory.id = "schild";
+    womenCategory.innerHTML = "Schilder";
     womenCategory.addEventListener("click", handleKategorie);
-    document.getElementById("womenButton")?.appendChild(womenCategory);
+    document.getElementById("schildButton")?.appendChild(womenCategory);
+
+    let textCategory: HTMLAnchorElement = document.createElement("a");
+    textCategory.id = "text";
+    textCategory.innerHTML = "Texte";
+    textCategory.addEventListener("click", handleKategorie);
+    document.getElementById("textButton")?.appendChild(textCategory);
+
+    let streifenCategory: HTMLAnchorElement = document.createElement("a");
+    streifenCategory.id = "streifen";
+    streifenCategory.innerHTML = "Streifen";
+    streifenCategory.addEventListener("click", handleKategorie);
+    document.getElementById("streifenButton")?.appendChild(streifenCategory);
 
     function handleKategorie(_event: Event): void {
 
         if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "all") {
-            (<HTMLDivElement>document.getElementById("menBlock")).style.display = "block";
-            (<HTMLDivElement>document.getElementById("womenBlock")).style.display = "block";
-        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "men") {
-            (<HTMLDivElement>document.getElementById("menBlock")).style.display = "block";
-            (<HTMLDivElement>document.getElementById("womenBlock")).style.display = "none";
-        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "women") {
-            (<HTMLDivElement>document.getElementById("menBlock")).style.display = "none";
-            (<HTMLDivElement>document.getElementById("womenBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "block";
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "figur") {
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "none";
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "schild") {
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "none";
         }
+        else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "text") {
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "block";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "none";
+        }
+        else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "streifen") {
+            (<HTMLDivElement>document.getElementById("figurBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("schildBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("textBlock")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("streifenBlock")).style.display = "block";
+        }
+
     }
 
 }

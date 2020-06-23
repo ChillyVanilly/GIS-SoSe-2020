@@ -21,10 +21,10 @@ var Aufgabe07Neu;
         newDiv.appendChild(name);
         console.log(name);
         //BESCHREIBUNG
-        let description = document.createElement("p");
-        description.innerHTML = localStorage.getItem("artikel_description" + index);
-        newDiv.appendChild(description);
-        console.log(description);
+        let beschreibung = document.createElement("p");
+        beschreibung.innerHTML = localStorage.getItem("artikel_description" + index);
+        newDiv.appendChild(beschreibung);
+        console.log(beschreibung);
         //PREIS
         let price = document.createElement("p");
         price.innerHTML = localStorage.getItem("artikel_preis" + index) + "€";
@@ -33,7 +33,7 @@ var Aufgabe07Neu;
         console.log(price);
         //BUTTON
         let kaufen = document.createElement("button");
-        kaufen.innerHTML = "Löschen";
+        kaufen.innerHTML = "Aus dem Warenkorb entfernen";
         newDiv.appendChild(kaufen);
         kaufen.addEventListener("click", handleDelete);
         //Gesamtpreis berechnen

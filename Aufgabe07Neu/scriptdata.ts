@@ -1,11 +1,16 @@
 namespace Aufgabe07Neu {
 
     export interface Artikel {
-        img: string;
+        bild: string;
         name: string;
-        description: string;
+        beschreibung: string;
         preis: number;
         category: number;
+        länge: string;
+        wifi: string;
+        wasserdicht: string;
+        smarthome: string;
+        farbe: string;
     }
 
     export let artikel: Artikel[];

@@ -2,19 +2,32 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    background-image: url(wallpaper.jpg);
+    font-family: sans-serif;
+    margin:0px;
+    padding:0px;
+}
 @media screen and (min-width: 800px){
-/*Desktop Version*/
+/*Desktop*/
 #active{
     text-decoration: underline;
 }
 
+
 header{
     height: 100px;
-    background: #ffffff;
+    background-color: rgba(255, 0, 212, 0.466);
     width: 100%;
     z-index: 12;
     position: fixed;
-    border-bottom: thin solid #000000;
+    border-bottom: thin solid #ffffff;
 }
 .top{
     float: left;
@@ -26,7 +39,7 @@ header{
     width: 70px;
     height: 70px;
 }
-img[alt="shop_logo"]{
+img[alt="logo"]{
     margin-top: 10px;
     width: 70px;
     height: 70px;
@@ -36,8 +49,8 @@ nav{
     line-height: 100px;
     margin-left: 10px;
 }
-
 nav a{
+    border-radius: 10px;
     text-decoration: none;
     font-family: monospace;
     font-size: 20px;
@@ -46,7 +59,7 @@ nav a{
     color: #000000;
 }
 nav a:hover{
-    color: #6471FF;
+    color: #ffffff;
 }
 nav img:hover{
     opacity: 70%;
@@ -60,7 +73,7 @@ nav img:hover{
     font-size: 10px;
     cursor: pointer;
 }
-#menButton {
+#figurButton {
     border: none;
     color: white;
     text-align: center;
@@ -69,7 +82,25 @@ nav img:hover{
     font-size: 10px;
     cursor: pointer;
 }
-#womenButton {
+#schildButton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}
+#textButton {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}
+#streifenButton {
     border: none;
     color: white;
     text-align: center;
@@ -177,7 +208,6 @@ img[alt="trolley_icon"]{
     
     header{
         height: 100px;
-        background: #ffffff;
         width: 100%;
         z-index: 12;
         position: fixed;
@@ -303,7 +333,6 @@ img[alt="trolley_icon"]{
         
         header{
             height: 80px;
-            background: #ffffff;
             width: 100%;
             z-index: 12;
             position: fixed;
