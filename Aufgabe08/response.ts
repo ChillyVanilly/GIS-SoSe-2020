@@ -1,24 +1,22 @@
 namespace Aufgabe08 {
+    document.getElementById("buttonid")?.addEventListener("click", ausgeben);
 
-    let formData: FormData;
-    document.getElementById("buttonid")?.addEventListener("click", buttonHandler);
 
-    function buttonHandler(): void {
-        responseHolen("https://vasilii-server.herokuapp.com/");
-    }
-
-    async function responseHolen(_url: RequestInfo): Promise<void> {
-        formData = new FormData(document.forms[0]);
-        let url: string = "" + _url;
+    async function ausgeben(): Promise<void> {
+        let formData: FormData = new FormData(document.forms[0]);
+        let url: string = "https://vasilii-server.herokuapp.com/";
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        url += url + "?" + query.toString();
-        let response: Response = await fetch(url);
-        let responseToUser: String = await response.text();
-        console.log(responseToUser);
+        url = url + "?" + query.toString();
+        console.log(query.toString());
+        await fetch(url);
+        for (let entry of query) {
+            console.log(entry);
+            console.log("name: " + entry[0]);
+            console.log("value: " + entry[1]);
+    
+        }
     }
-} 
-
-
+    }
 
 
 

@@ -1,19 +1,19 @@
 "use strict";
 var Aufgabe08;
 (function (Aufgabe08) {
-    let formData;
-    document.getElementById("buttonid")?.addEventListener("click", buttonHandler);
-    function buttonHandler() {
-        responseHolen("https://vasilii-server.herokuapp.com/");
-    }
-    async function responseHolen(_url) {
-        formData = new FormData(document.forms[0]);
-        let url = "" + _url;
+    document.getElementById("buttonid")?.addEventListener("click", ausgeben);
+    async function ausgeben() {
+        let formData = new FormData(document.forms[0]);
+        let url = "https://vasilii-server.herokuapp.com/";
         let query = new URLSearchParams(formData);
-        url += url + "?" + query.toString();
-        let response = await fetch(url);
-        let responseToUser = await response.text();
-        console.log(responseToUser);
+        url = url + "?" + query.toString();
+        console.log(query.toString());
+        await fetch(url);
+        for (let entry of query) {
+            console.log(entry);
+            console.log("name: " + entry[0]);
+            console.log("value: " + entry[1]);
+        }
     }
 })(Aufgabe08 || (Aufgabe08 = {}));
 /*
