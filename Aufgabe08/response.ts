@@ -1,9 +1,9 @@
 namespace Aufgabe08 {
       //Gibt Button einen Eventlistener bei Click
-    document.getElementById("buttonid")?.addEventListener("click", ausgeben);
+    document.getElementById("buttonid")?.addEventListener("click", answer);
 
 
-    async function ausgeben(): Promise<void> {
+    async function answer(): Promise<void> {
         
         //greift auf die Daten des forms im login.html zurück und packt sie in formDatra
         let formData: FormData = new FormData(document.forms[0]);

@@ -2,8 +2,8 @@
 var Aufgabe08;
 (function (Aufgabe08) {
     //Gibt Button einen Eventlistener bei Click
-    document.getElementById("buttonid")?.addEventListener("click", ausgeben);
-    async function ausgeben() {
+    document.getElementById("buttonid")?.addEventListener("click", answer);
+    async function answer() {
         //greift auf die Daten des forms im login.html zurück und packt sie in formDatra
         let formData = new FormData(document.forms[0]);
         //Server url als String
