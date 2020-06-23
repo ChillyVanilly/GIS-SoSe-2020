@@ -29,8 +29,9 @@ var A08Server;
         _response.setHeader("content-type", "text/html; charset=utf-8");
         //erlaubt dem Browser Code jeglichen Ursprungs anzufragen damit Resource erreicht wird
         _response.setHeader("Access-Control-Allow-Origin", "*");
-        //Serverantwort = AnfragenURL:
+        //Serverantwort = AnfragenURL: , schriebt auf der Seite
         _response.write(_request.url);
+        console.log(_request.url); //  Aufgabe : Serverantwort (loggt in Serverkonsole)
         //Ende der Anfrage:
         _response.end();
     }
