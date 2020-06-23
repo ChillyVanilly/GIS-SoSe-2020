@@ -12,11 +12,11 @@ namespace Aufgabe08 {
         let url: string = "https://vasilii-server.herokuapp.com/";
 
         //Quer : Daten aus form Data als "ANY"
-        let query: URLSearchParams = new URLSearchParams(formData.toString());
+        let query: URLSearchParams = new URLSearchParams(<any>formData);
 
         //url + query zusammen
         url = url + "?" + query.toString();
-        console.log("url: " + url);
+        //console.log("url: " + url);
         console.log(query.toString());
 
         //Antwort des Servers aus url+query

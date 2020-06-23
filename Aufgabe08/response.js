@@ -9,10 +9,10 @@ var Aufgabe08;
         //Server url als String
         let url = "https://vasilii-server.herokuapp.com/";
         //Quer : Daten aus form Data als "ANY"
-        let query = new URLSearchParams(formData.toString());
+        let query = new URLSearchParams(formData);
         //url + query zusammen
         url = url + "?" + query.toString();
-        console.log("url: " + url);
+        //console.log("url: " + url);
         console.log(query.toString());
         //Antwort des Servers aus url+query
         await fetch(url);
