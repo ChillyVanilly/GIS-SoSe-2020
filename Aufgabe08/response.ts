@@ -1,4 +1,28 @@
 namespace Aufgabe08 {
+
+    let formData: FormData;
+    document.getElementById("button")?.addEventListener("click", buttonHandler);
+
+    function buttonHandler(): void {
+        responseHolen("https://vasilii-server.herokuapp.com/");
+    }
+
+    async function responseHolen(_url: RequestInfo): Promise<void> {
+        formData = new FormData(document.forms[0]);
+        let url: string = "" + _url;
+        let query: URLSearchParams = new URLSearchParams(<any>formData);
+        url += url + "?" + query.toString();
+        let response: Response = await fetch(url);
+        let responseToUser: String = await response.text();
+        console.log(responseToUser);
+    }
+} 
+
+
+
+
+
+    /*
     //Gibt Button einen Eventlistener bei Click
     document.getElementById("buttonid")?.addEventListener("click", response);
     
@@ -27,5 +51,4 @@ namespace Aufgabe08 {
             console.log("value: " + entry[1]);
     
         }
-    }
-    }
+    }*/
