@@ -47,6 +47,11 @@ namespace Aufgabe07Neu {
             beschreibung.innerHTML = artikel[i].beschreibung;
             document.getElementById("div" + i)?.appendChild(beschreibung);
 
+            //FARBE
+            let farbe: HTMLParagraphElement = document.createElement("p");
+            farbe.innerHTML = artikel[i].farbe;
+            document.getElementById("div" + i)?.appendChild(farbe);
+
             //PREIS
             let price: HTMLElement = document.createElement("p");
             price.innerHTML = artikel[i].preis + "€";
@@ -91,6 +96,7 @@ namespace Aufgabe07Neu {
         localStorage.setItem("artikel_bild" + (cartArtikel.length - 1), artikel[indexNr].bild);
         localStorage.setItem("artikel_name" + (cartArtikel.length - 1), artikel[indexNr].name);
         localStorage.setItem("artikel_description" + (cartArtikel.length - 1), artikel[indexNr].beschreibung);
+        localStorage.setItem("artikel_farbe" + (cartArtikel.length - 1), artikel[indexNr].farbe);
         localStorage.setItem("artikel_preis" + (cartArtikel.length - 1), artikel[indexNr].preis.toString());
         localStorage.setItem("anzahlArtikel", cartArtikel.length.toString());
 

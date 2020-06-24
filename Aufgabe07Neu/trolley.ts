@@ -30,6 +30,12 @@ namespace Aufgabe07Neu {
         beschreibung.innerHTML = localStorage.getItem("artikel_description" + index)!;
         newDiv.appendChild(beschreibung);
         console.log(beschreibung);
+        
+        //FARBE
+        let farbe: HTMLParagraphElement = document.createElement("p");
+        farbe.innerHTML = localStorage.getItem("artikel_farbe" + index)!;
+        newDiv.appendChild(farbe);
+        console.log(farbe);
 
         //PREIS
         let price: HTMLParagraphElement = document.createElement("p");
