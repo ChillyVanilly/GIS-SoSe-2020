@@ -40,6 +40,10 @@ var Aufgabe07Neu;
             let beschreibung = document.createElement("p");
             beschreibung.innerHTML = Aufgabe07Neu.artikel[i].beschreibung;
             document.getElementById("div" + i)?.appendChild(beschreibung);
+            //FARBE
+            let farbe = document.createElement("p");
+            farbe.innerHTML = Aufgabe07Neu.artikel[i].farbe;
+            document.getElementById("div" + i)?.appendChild(farbe);
             //PREIS
             let price = document.createElement("p");
             price.innerHTML = Aufgabe07Neu.artikel[i].preis + "€";
@@ -66,7 +70,7 @@ var Aufgabe07Neu;
         artikelCounter++;
         blasenDiv.innerHTML = artikelCounter + "";
         if (_event.currentTarget?.getAttribute("preis")) {
-            summe = count + parseInt(_event.currentTarget?.getAttribute("preis"));
+            summe = count + parseFloat(_event.currentTarget?.getAttribute("preis"));
             count = summe;
         }
         console.log(summe.toFixed(0));
@@ -76,6 +80,7 @@ var Aufgabe07Neu;
         localStorage.setItem("artikel_bild" + (cartArtikel.length - 1), Aufgabe07Neu.artikel[indexNr].bild);
         localStorage.setItem("artikel_name" + (cartArtikel.length - 1), Aufgabe07Neu.artikel[indexNr].name);
         localStorage.setItem("artikel_description" + (cartArtikel.length - 1), Aufgabe07Neu.artikel[indexNr].beschreibung);
+        localStorage.setItem("artikel_farbe" + (cartArtikel.length - 1), Aufgabe07Neu.artikel[indexNr].farbe);
         localStorage.setItem("artikel_preis" + (cartArtikel.length - 1), Aufgabe07Neu.artikel[indexNr].preis.toString());
         localStorage.setItem("anzahlArtikel", cartArtikel.length.toString());
     }
@@ -138,4 +143,4 @@ var Aufgabe07Neu;
         }
     }
 })(Aufgabe07Neu || (Aufgabe07Neu = {}));
-//# sourceMappingURL=tsinterface.js.map
+//# sourceMappingURL=interface.js.map

@@ -84,7 +84,7 @@ namespace Aufgabe07Neu {
         blasenDiv.innerHTML = artikelCounter + "";
 
         if ((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")) {
-            summe = count + parseInt((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
+            summe = count + parseFloat((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
             count = summe;
         }
         console.log(summe.toFixed(0));

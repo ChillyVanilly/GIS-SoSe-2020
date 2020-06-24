@@ -1,6 +1,6 @@
 namespace Aufgabe07Neu {
 
-    let length: number = parseInt(localStorage.getItem("anzahlArtikel")!);
+    let length: number = parseFloat(localStorage.getItem("anzahlArtikel")!);
     let preis: number = 0;
     let gesamtpreis: HTMLParagraphElement = document.createElement("p");
 

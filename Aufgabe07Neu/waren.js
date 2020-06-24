@@ -1,7 +1,7 @@
 "use strict";
 var Aufgabe07Neu;
 (function (Aufgabe07Neu) {
-    let length = parseInt(localStorage.getItem("anzahlArtikel"));
+    let length = parseFloat(localStorage.getItem("anzahlArtikel"));
     let preis = 0;
     let gesamtpreis = document.createElement("p");
     for (let index = 0; index <= length - 1; index++) {
@@ -25,6 +25,11 @@ var Aufgabe07Neu;
         beschreibung.innerHTML = localStorage.getItem("artikel_description" + index);
         newDiv.appendChild(beschreibung);
         console.log(beschreibung);
+        //FARBE
+        let farbe = document.createElement("p");
+        farbe.innerHTML = localStorage.getItem("artikel_farbe" + index);
+        newDiv.appendChild(farbe);
+        console.log(farbe);
         //PREIS
         let price = document.createElement("p");
         price.innerHTML = localStorage.getItem("artikel_preis" + index) + "€";
@@ -38,7 +43,7 @@ var Aufgabe07Neu;
         kaufen.addEventListener("click", handleDelete);
         //Gesamtpreis berechnen
         preis = preis + parseFloat(price.innerHTML);
-        gesamtpreis.innerHTML = "Gesamtpreis: " + preis.toFixed(0) + "€";
+        gesamtpreis.innerHTML = "Gesamtwert: " + preis.toFixed(0) + "€";
         document.getElementById("warenkorbWert")?.appendChild(gesamtpreis);
     }
     let delButton = document.getElementById("delButton");
@@ -46,15 +51,15 @@ var Aufgabe07Neu;
     function handleDelete(_event) {
         let preisString = _event.currentTarget.parentElement.getAttribute("preis");
         preis = preis - parseFloat(preisString);
-        gesamtpreis.innerHTML = "Gesamtpreis: " + preis.toFixed(0) + "€";
+        gesamtpreis.innerHTML = "Gesamtwert: " + preis.toFixed(0) + "€";
         (_event.currentTarget.parentElement).remove();
     }
     function handleDeleteAll(_event) {
         for (let index = 0; index <= length; index++) {
             document.getElementById("div" + index).remove();
-            gesamtpreis.innerHTML = "Gesamtpreis: " + 0 + "€";
+            gesamtpreis.innerHTML = "Gesamtwert: " + 0 + "€";
             localStorage.clear();
         }
     }
 })(Aufgabe07Neu || (Aufgabe07Neu = {}));
-//# sourceMappingURL=trolley.js.map
+//# sourceMappingURL=waren.js.map

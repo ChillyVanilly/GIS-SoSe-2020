@@ -134,7 +134,7 @@ nav img:hover{
     border-radius: 0.5em;;
     font-size: 1.2em;
     width: 10em;
-    transition: width 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
        
 #suche:focus {
@@ -248,7 +248,7 @@ img[alt="wagen_icon"]{
         width: 70px;
         height: 70px;
     }
-    img[alt="shop_logo"]{
+    img[alt="logo"]{
         margin-top: 10px;
         width: 70px;
         height: 70px;
@@ -268,7 +268,7 @@ img[alt="wagen_icon"]{
         color: #000000;
     }
     nav a:hover{
-        color: #6471FF;
+        color: #ffffff;
     }
     nav img:hover{
         width: 30px;
@@ -282,7 +282,7 @@ img[alt="wagen_icon"]{
         margin-top: 40px;
         line-height: 20px;
     }
-    img[alt="trolley_icon"]{
+    img[alt="wagen_icon"]{
         float: right;
         margin-top: 40px;
         margin-right: 10px;
@@ -361,7 +361,7 @@ img[alt="wagen_icon"]{
             width: 100%;
             z-index: 12;
             position: fixed;
-            border-bottom: thin solid #000000;
+            border-bottom: thin solid #ffffff;
         }
         .top{
             float: left;
@@ -373,7 +373,7 @@ img[alt="wagen_icon"]{
             width: 50px;
             height: 50px;
         }
-        img[alt="shop_logo"]{
+        img[alt="logo"]{
             margin-top: 20px;
             width: 40px;
             height: 40px;
@@ -393,7 +393,7 @@ img[alt="wagen_icon"]{
             color: #000000;
         }
         nav a:hover{
-            color: #6471FF;
+            color: #ffffff;
         }
         nav img:hover{
             width: 30px;
@@ -407,7 +407,7 @@ img[alt="wagen_icon"]{
             margin-top: 30px;
             line-height: 20px;
         }
-        img[alt="trolley_icon"]{
+        img[alt="wagen_icon"]{
             float: right;
             margin-top: 30px;
             margin-right: 10px;
@@ -470,9 +470,10 @@ img[alt="wagen_icon"]{
         .products div p{
             font-family: merienda;
             margin-top: 10px;
+        }*/
         }
-        }
 
 
 
 
+    }
