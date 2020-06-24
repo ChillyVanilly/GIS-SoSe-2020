@@ -2,7 +2,7 @@ namespace Aufgabe07Neu {
 
     //Interface
 
-    export function createArtikel(): void {
+    export function create(): void {
         for (let i: number = 0; i < artikel.length; i++) {
 
             if (artikel[i].category == 1) {
