@@ -15,7 +15,7 @@ namespace A09Server {
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         _url = _url + "/json" + "?" + query.toString();
         let response1: Response = await fetch(_url, { method: "get" });
-        let response2: string = await response1.text(); //oder .json
+        let response2: string = await response1.json(); //oder .json
         console.log(response2);
         urlErstellen();
     }
