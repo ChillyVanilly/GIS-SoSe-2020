@@ -1,5 +1,6 @@
 namespace A09Server {
     //Gibt Button einen Eventlistener bei Click
+    //let deklariert variable
     let newButton1: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("buttonhtml"));
     newButton1.addEventListener("click", handleHtml);
     let newButton2: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("buttonjson"));
@@ -7,17 +8,23 @@ namespace A09Server {
     let _url: string;
 
 
-
+//Async Function ist asynchrone Funktion die Objekt zurückgibt. Asynchrone Funktionen laufen über Event loop, 
+//geben impliziertes Promise Objekt zurück.
+//promise objekt - entweder resolved oder rejected
+//die funktion hängt formulardaten an den URL 
     async function handleJson(): Promise<void> {
         //greift auf die Daten des forms im login.html zurück und packt sie in formDatra
+        //FormData belegt Name-Wert-Paare des Formulars und encodiert diese Werte bei der Übertragung
         let formData: FormData = new FormData(document.forms[0]);
         //Quer : Daten aus form Data als "ANY"
+        //SearchParams definiert hilfsmethoden um mit dem Query String einer URL zu arbeiten
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        _url = _url + "/json" + "?" + query.toString();
+        urlErstellen();
+        _url = _url + "/json" + "?" + query.toString(); //an der url wird der pfad und querry string angehängt (in diesem fall html)
+        //querry string (Abfrage Zeichenkette) ist bestandteil einer URL
         let response1: Response = await fetch(_url, { method: "get" });
         let response2: string = await response1.json(); //oder .json
         console.log(response2);
-        urlErstellen();
     }
     
     async function handleHtml(): Promise<void> {
@@ -27,12 +34,16 @@ namespace A09Server {
         urlErstellen();
         _url = _url + "/html" + "?" + query.toString();
         //Die Antwort wird vom Server geholt
+        //await fetch : kommunikation mit dem Server
+        //mithilfe von fetch wird mit hilfe von fetch anderen servern gesendet
         let response1: Response = await fetch(_url, { method: "get" });
+        //hier wird die Antwort vom Server erhalten und als text gespeichert
         let response2: string = await response1.text();
+        //
         let ausgabe: HTMLParagraphElement = (<HTMLParagraphElement>document.getElementById("htmlAusgabe"));
-        ausgabe.innerHTML = response2;
-        console.log(response2);
-        urlErstellen(); //url wird überschrieben damit sie wieder leer ist
+        ausgabe.innerHTML = response2; //antwort vom server wird als html gespeichert
+        console.log(response2); //log in der konsole
+        urlErstellen(); //url wird überschrieben damit sie wieder "leer" ist
     }
 
     function urlErstellen(): void {
