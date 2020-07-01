@@ -25,6 +25,7 @@ namespace A09Server {
         let response1: Response = await fetch(_url, { method: "get" });
         let response2: string = await response1.json(); //oder .json
         console.log(response2);
+        urlErstellen();
     }
     
     async function handleHtml(): Promise<void> {
