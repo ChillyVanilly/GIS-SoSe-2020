@@ -6,7 +6,7 @@
       },
       "fields": {
         "title": "Erdbeereis",
-        "price": 10.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
@@ -22,11 +22,11 @@
       },
       "fields": {
         "title": "Schokoladeneis",
-        "price": 12.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-2.jpeg"
+              "url": "./images/schokokugel.jpg"
             }
           }
         }
@@ -38,11 +38,11 @@
       },
       "fields": {
         "title": "Vanilleeis",
-        "price": 12.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-3.jpeg"
+              "url": "./images/vanillekugel.jpg"
             }
           }
         }
@@ -54,11 +54,11 @@
       },
       "fields": {
         "title": "Zitroneneis",
-        "price": 22.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-4.jpeg"
+              "url": "./images/zitronenkugel.jpg"
             }
           }
         }
@@ -70,11 +70,11 @@
       },
       "fields": {
         "title": "Meloneneis",
-        "price": 88.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-5.jpeg"
+              "url": "./images/melonenkugel.jpg"
             }
           }
         }
@@ -86,11 +86,11 @@
       },
       "fields": {
         "title": "Colaeis",
-        "price": 32.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-6.jpeg"
+              "url": "./images/colakugel.jpg"
             }
           }
         }
@@ -102,11 +102,11 @@
       },
       "fields": {
         "title": "Oreoeis",
-        "price": 45.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/oreokugel.jpg"
             }
           }
         }
@@ -118,11 +118,11 @@
       },
       "fields": {
         "title": "Tiramisu",
-        "price": 33.99,
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-8.jpeg"
+              "url": "./images/tiramisukugel.jpg"
             }
           }
         }
@@ -133,12 +133,12 @@
         "id": "9"
       },
       "fields": {
-        "title": "Waffel",
-        "price": 45.99,
+        "title": "Waldmeister",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/waldmeisterkugel.jpg"
             }
           }
         }
@@ -149,12 +149,12 @@
         "id": "10"
       },
       "fields": {
-        "title": "Becher",
-        "price": 45.99,
+        "title": "Kokusnuss",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/kokusnusskugel.jpg"
             }
           }
         }
@@ -165,12 +165,12 @@
         "id": "11"
       },
       "fields": {
-        "title": "Glas",
-        "price": 45.99,
+        "title": "Maracuja",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/maracujakugel.jpg"
             }
           }
         }
@@ -181,12 +181,12 @@
         "id": "12"
       },
       "fields": {
-        "title": "Eimer",
-        "price": 45.99,
+        "title": "Mojito",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/mojitokugel.jpg"
             }
           }
         }
@@ -197,12 +197,12 @@
         "id": "13"
       },
       "fields": {
-        "title": "Streusel",
-        "price": 45.99,
+        "title": "Stracciatella",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/stracciatellakugel.png"
             }
           }
         }
@@ -213,12 +213,12 @@
         "id": "14"
       },
       "fields": {
-        "title": "Oreos",
-        "price": 45.99,
+        "title": "Mango",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/mangokugel.jpg"
             }
           }
         }
@@ -229,12 +229,12 @@
         "id": "15"
       },
       "fields": {
-        "title": "Haribos",
-        "price": 45.99,
+        "title": "Joghurt",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/joghurtkugel.jpg"
             }
           }
         }
@@ -245,12 +245,12 @@
         "id": "16"
       },
       "fields": {
-        "title": "Beeren-Mix",
-        "price": 45.99,
+        "title": "Wodka",
+        "price": 4.99,
         "image": {
           "fields": {
             "file": {
-              "url": "./images/product-7.jpeg"
+              "url": "./images/wodkakugel.jpg"
             }
           }
         }
