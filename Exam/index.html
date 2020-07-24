@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eisdiele</title>
+    <!-- font awesome -->
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b05f79ab22.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+        <img src="/Exam/Images/logo.png" alt="eis logo" />
+        <div class="cart-btn">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- ende navbar -->
+    <!-- hero -->
+    <header class="hero">
+      <div class="banner">
+        <h1 class="banner-title">Eis zusammenstellen</h1>
+        <button class="banner-btn">shop now</button>
+      </div>
+    </header>
+    <!-- end hero -->
+    <!-- artikel -->
+    <section class="prodcuts">
+      <div class="section-title">
+        <h2>Zutatenauswahl</h2>
+      </div>
+      <div class="products-center">
+        <!-- einzelne zutat -->
+        <!--
+        <article class="product">
+          <div class="img-container">
+            <img
+              src="/Exam/Images/erdbeerkugel.jpg"
+              alt="product"
+              class="product-img"
+            />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart">ZUTAT HINZUFÜGEN</i>
+            </button>
+          </div>
+          <h3>Erdbeerkugel</h3>
+          <h4>5$</h4>
+        </article>                             -->
+        <!-- einzelne zutat ende -->
+      </div>
+    </section>
+    <!-- artikel ende -->
+    <!-- einkaufswagen -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Dein Eis</h2>
+        <div class="cart-content">
+          <!-- einkaufswagen zutat -->
+          <!--<div class="cart-item">
+            <img src="/Exam/Images/erdbeerkugel.jpg" alt="zutat" />
+            <div>
+              <h4>Erdbeerkugel</h4>
+              <h5>$5</h5>
+              <span class="remove-item">entfernen</span>
+            </div>
+            <div>
+              <i class="fas fa-chevron-up"></i>
+              <p class="item-amount">1</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>-->
+          <!-- einkaufswagen zutat ende -->
+        </div>
+        <div class="cart-footer">
+          <h3>Gesamtbetrag: € <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">Eis löschen</button>
+        </div>
+      </div>
+    </div>
+    <!-- einkaufswagen ende -->
+    <script src="app.js"></script>
+  </body>
+</html>
