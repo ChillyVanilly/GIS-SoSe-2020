@@ -10,7 +10,7 @@
         "image": {
           "fields": {
             "file": {
-              "url": "/Exam/Images/erdbeerkugel.jpg"
+              "url": "images/erdbeerkugel.jpg"
             }
           }
         }

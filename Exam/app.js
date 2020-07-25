@@ -154,6 +154,7 @@ class UI {
     clearCartBtn.addEventListener("click", () => {
       this.clearCart();
     });
+    //zum warenkorb cart Btn
     //cart funktionalität
     cartContent.addEventListener("click", (event) => {
       if (event.target.classList.contains("remove-item")) {
@@ -251,3 +252,5 @@ document.addEventListener(
     //brauchen hierfür keine neue instanz, benutzen eif die klasse
   }
 );
+
+//müssen jetzt die einträge im warenkorb in die database einfügen
